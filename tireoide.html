@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semiologia da Tireoide | Habilidades 4º Bimestre</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- PDF.js v3.11.174 via cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            thyroid: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+              950: '#2e1065',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .card-flip { perspective: 1000px; }
+    .card-inner { transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; }
+    .card-flipped { transform: rotateY(180deg); }
+    .card-face { backface-visibility: hidden; }
+    .card-back { transform: rotateY(180deg); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 min-h-screen flex flex-col">
+
+  <!-- Cabeçalho Superior Fixo -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <!-- Marca e Título -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-thyroid-600 to-indigo-700 flex items-center justify-center text-white shadow-md shadow-thyroid-600/20 shrink-0">
+              <!-- Ícone estilizado de borboleta / glândula tireoide -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.9" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v4m0-4c-1.5 0-2.5 1.5-4.5 2.5C5.5 17.5 4 16 4 13.5c0-2 1.5-3 2.5-3.5C5 9 4.5 7 6 5.5 7.5 4 10 6 11 9.5h2C14 6 16.5 4 18 5.5c1.5 1.5 1 3.5-.5 4.5 1 .5 2.5 1.5 2.5 3.5 0 2.5-1.5 4-3.5 3-2-1-3-2.5-4.5-2.5z" />
+              </svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h1 class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white leading-tight">Semiologia da Tireoide</h1>
+                <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-thyroid-100 text-thyroid-800 dark:bg-thyroid-900/60 dark:text-thyroid-300">4º Bimestre</span>
+              </div>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Habilidades Médicas • Parte 2: Tireoide (Seções 2.1 a 2.7)</p>
+            </div>
+          </div>
+
+          <!-- Botão Modo Escuro Mobile -->
+          <button id="themeToggleMobile" aria-label="Alternar tema" class="md:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+            <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+          </button>
+        </div>
+
+        <!-- Busca Global & Controles -->
+        <div class="flex items-center gap-2.5 flex-1 md:max-w-md lg:max-w-lg">
+          <div class="relative flex-1">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+            <input
+              id="globalSearch"
+              type="text"
+              placeholder="Buscar bócio, Graves, Pemberton, Plummer, mixedema..."
+              class="w-full pl-10 pr-9 py-2 text-sm rounded-xl bg-slate-100 dark:bg-slate-800/90 border border-transparent focus:border-thyroid-500 focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-thyroid-500/20 outline-none transition"
+            />
+            <button id="clearSearch" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <button id="themeToggleDesktop" aria-label="Alternar tema" class="hidden md:flex p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition shrink-0" title="Alternar Modo Claro / Escuro">
+            <svg class="w-5 h-5 dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+            <svg class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navegação por Abas -->
+      <nav id="mainTabs" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-3 -mb-px">
+        <button data-tab="atlas" class="tab-btn active flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-semibold border-b-2 border-thyroid-600 text-thyroid-700 dark:text-thyroid-300 bg-thyroid-50/70 dark:bg-thyroid-950/50 whitespace-nowrap transition">
+          <span>🖼️ Atlas & Extrator PDF (2.7)</span>
+        </button>
+        <button data-tab="quiz" class="tab-btn flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">
+          <span>🎯 Treino & Prova Múltipla Escolha (45 Questões)</span>
+        </button>
+        <button data-tab="anamnese" class="tab-btn flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">
+          <span>📋 Anamnese & Exame Físico (2.1–2.2)</span>
+        </button>
+        <button data-tab="sintomas" class="tab-btn flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">
+          <span>⚖️ Hiper vs. Hipotireoidismo & Sintomas (2.3)</span>
+        </button>
+        <button data-tab="triades" class="tab-btn flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">
+          <span>🚨 Tríades, Patognomônicos & Alarme (2.4–2.5)</span>
+        </button>
+        <button data-tab="manobras" class="tab-btn flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">
+          <span>🩺 Manobras Especiais (2.6)</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner de Busca Global -->
+  <div id="globalSearchResults" class="hidden max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl border border-thyroid-200 dark:border-thyroid-800 shadow-lg p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-base font-bold text-thyroid-700 dark:text-thyroid-300 flex items-center gap-2">
+          <span>🔍 Resultados da Busca Global</span>
+          <span id="searchCountBadge" class="px-2.5 py-0.5 text-xs rounded-full bg-thyroid-100 dark:bg-thyroid-900 text-thyroid-800 dark:text-thyroid-200">0</span>
+        </h2>
+        <button id="closeGlobalSearch" class="text-xs font-medium text-slate-500 hover:text-slate-800 dark:hover:text-white px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800">Fechar busca</button>
+      </div>
+      <div id="searchResultsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-h-96 overflow-y-auto pr-1"></div>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ===================================================================== -->
+    <!-- ABA 1: ATLAS & EXTRATOR DE IMAGENS DO PDF (SEÇÃO 2.7)                 -->
+    <!-- ===================================================================== -->
+    <section id="tab-atlas" class="tab-panel space-y-6">
+      <!-- Painel Extrator PDF.js -->
+      <div class="bg-gradient-to-br from-thyroid-950 via-slate-900 to-indigo-950 text-white rounded-2xl p-5 sm:p-6 shadow-xl border border-thyroid-700/40">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+          <div class="space-y-2 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-thyroid-500/20 border border-thyroid-400/30 text-thyroid-200 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Extrator Inteligente PDF.js (Seção 2.7 • Páginas 6 a 11)
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold tracking-tight">Extrator de Imagens Clínicas do <code class="text-thyroid-300 bg-white/10 px-2 py-0.5 rounded-lg">Tireoide.pdf</code></h2>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Carregue o arquivo <strong>Tireoide.pdf</strong> abaixo. O motor PDF.js extrairá automaticamente todas as fotografias clínicas embutidas nas páginas 6 a 11 e as pareará com as <strong>23 fichas da Seção 2.7</strong>, permitindo também recorte manual das páginas e treino visual.
+            </p>
+          </div>
+
+          <!-- Área Drag & Drop / Upload -->
+          <div id="pdfDropZone" class="relative flex flex-col items-center justify-center border-2 border-dashed border-thyroid-400/60 hover:border-thyroid-300 bg-white/5 hover:bg-white/10 rounded-2xl p-5 text-center cursor-pointer transition lg:w-96 shrink-0">
+            <input id="pdfFileInput" type="file" accept="application/pdf" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+            <svg class="w-9 h-9 text-thyroid-300 mb-2" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+            </svg>
+            <p class="text-sm font-semibold text-white">Clique ou arraste o <span class="text-thyroid-300 underline">Tireoide.pdf</span> aqui</p>
+            <p id="pdfStatusText" class="text-xs text-slate-300 mt-1">Processamento 100% local no navegador</p>
+          </div>
+        </div>
+
+        <!-- Barra de Progresso da Extração -->
+        <div id="pdfProgressContainer" class="hidden mt-4 pt-4 border-t border-white/10">
+          <div class="flex items-center justify-between text-xs text-thyroid-200 mb-1.5">
+            <span id="pdfProgressLabel">Lendo páginas do PDF...</span>
+            <span id="pdfProgressPercent">0%</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+            <div id="pdfProgressBar" class="bg-gradient-to-r from-thyroid-400 to-indigo-300 h-2 rounded-full transition-all duration-200" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Controles Pós-Carregamento do PDF -->
+        <div id="pdfLoadedToolbar" class="hidden mt-4 pt-4 border-t border-white/15 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <span id="extractedStatsBadge" class="px-3 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-200 border border-emerald-400/30 font-semibold">0 imagens extraídas</span>
+            <button id="toggleRawGalleryBtn" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition">
+              Ver Galeria Bruta Extraída do PDF
+            </button>
+            <button id="togglePageViewerBtn" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition">
+              Visualizar / Recortar Páginas (6–11)
+            </button>
+          </div>
+          <div class="text-xs text-slate-300">
+            Dica: Clique em qualquer imagem para ampliar (Zoom) ou reassociar.
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeria Bruta de Imagens Extraídas do PDF -->
+      <div id="rawExtractedSection" class="hidden bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">Todas as Imagens Extraídas Diretamente do PDF</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Imagens embutidas detectadas via <code class="text-thyroid-600 dark:text-thyroid-400">page.getOperatorList()</code> em ordem sequencial das páginas.</p>
+          </div>
+          <button onclick="document.getElementById('rawExtractedSection').classList.add('hidden')" class="text-xs px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 font-medium">Ocultar</button>
+        </div>
+        <div id="rawExtractedGrid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3"></div>
+      </div>
+
+      <!-- Visualizador & Recortador Manual de Páginas do Atlas (Páginas 6 a 11) -->
+      <div id="pageCropperSection" class="hidden bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">Inspetor & Recortador de Páginas do Atlas (Páginas 6 a 11)</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Selecione uma página do PDF, arraste o mouse sobre qualquer figura para recortar e vincular a um achado clínico.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="pdfPageSelector" class="text-xs rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-3 py-2 font-medium"></select>
+            <button onclick="document.getElementById('pageCropperSection').classList.add('hidden')" class="text-xs px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 font-medium">Fechar</button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+          <div class="lg:col-span-2 overflow-auto max-h-[600px] border border-slate-200 dark:border-slate-700 rounded-xl bg-slate-100 dark:bg-slate-950 p-2 relative flex justify-center">
+            <canvas id="pdfPageCanvas" class="max-w-full h-auto cursor-crosshair shadow-md rounded"></canvas>
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-4 border border-slate-200 dark:border-slate-700 space-y-3">
+            <h4 class="text-sm font-bold">Recorte Selecionado</h4>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Arraste sobre a página ao lado para capturar uma região específica.</p>
+            <div class="w-full h-44 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 flex items-center justify-center overflow-hidden">
+              <img id="cropPreviewImg" class="hidden max-h-full max-w-full object-contain" alt="Prévia do recorte" />
+              <span id="cropPlaceholderText" class="text-xs text-slate-400">Nenhuma área recortada</span>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold mb-1">Vincular ao Achado Clínico (Seção 2.7):</label>
+              <select id="cropTargetFinding" class="w-full text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 px-3 py-2"></select>
+            </div>
+            <button id="applyCropBtn" disabled class="w-full py-2.5 px-4 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 disabled:opacity-40 text-white text-xs font-semibold transition">
+              Salvar Recorte nesta Ficha
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Filtros e Modo Estudo do Atlas -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 mr-1">Filtrar grupo:</span>
+          <button data-atlas-filter="todos" class="atlas-filter-btn active px-3 py-1.5 rounded-xl text-xs font-semibold bg-thyroid-600 text-white transition">Todos (23)</button>
+          <button data-atlas-filter="bocio-cervical" class="atlas-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Bócio, Nódulos & Exame Cervical</button>
+          <button data-atlas-filter="hiper-graves" class="atlas-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Hipertireoidismo & Graves</button>
+          <button data-atlas-filter="hipo-mixedema" class="atlas-filter-btn px-3 py-1.5 rounded-xl text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Hipotireoidismo & Mixedema</button>
+        </div>
+
+        <!-- Toggle Modo Estudo (Ocultar Diagnóstico) -->
+        <button id="blindStudyToggle" class="flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border border-amber-400/60 bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 transition shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"/></svg>
+          <span id="blindStudyLabel">Modo Estudo: Ocultar Diagnóstico</span>
+        </button>
+      </div>
+
+      <!-- Grid das 23 Fichas Clínicas da Seção 2.7 -->
+      <div id="atlasCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- ABA 2: ANAMNESE & EXAME FÍSICO (SEÇÕES 2.1 E 2.2)                     -->
+    <!-- ===================================================================== -->
+    <section id="tab-anamnese" class="tab-panel hidden space-y-8">
+      <!-- Seção 2.1: Anamnese -->
+      <div>
+        <div class="mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.1</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Anamnese Direcionada da Tireoide</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Fatores epidemiológicos, exposição ao iodo, desencadeantes e interferências medicamentosas.</p>
+        </div>
+        <div id="anamneseGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+
+      <!-- Destaques Fisiopatológicos (Oftalmopatia 1-6, Mixedema Pré-tibial, Achados Sistêmicos) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-sm font-bold text-thyroid-700 dark:text-thyroid-300 uppercase tracking-wide mb-2">Oftalmopatia Tireotóxica (Classes 1–6)</h3>
+          <ol class="space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 list-decimal list-inside">
+            <li>Olhar brilhante, retração palpebral, sinal de <strong>Von Graefe (lid-lag)</strong>.</li>
+            <li>Edema palpebral, conjuntival e das glândulas lacrimais.</li>
+            <li>Proptose (exoftalmômetro normal até <strong>23 mm</strong>); lagoftalmia ao fechar olhos.</li>
+            <li>Paralisia de movimentos oculares (<strong>convergência</strong> é a mais afetada).</li>
+            <li>Exposição permanente: ressecamento e <strong>úlcera de córnea</strong>.</li>
+            <li><span class="text-rose-600 dark:text-rose-400 font-semibold">Cegueira</span> por lesão compressiva do nervo óptico.</li>
+          </ol>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-sm font-bold text-amber-700 dark:text-amber-300 uppercase tracking-wide mb-2">Hipertireoidismo: Sistêmico & Graves</h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li>• <strong>Mixedema pré-tibial (~5% Graves):</strong> placas brilhantes, vermelho-acastanhadas, rugosas (<em>"pele de porco"</em>), indolores, face anterolateral da perna.</li>
+            <li>• <strong>Coração:</strong> FA é a principal arritmia (catecolaminérgica); quadro longo → miocardiopatia tireotóxica e síndrome hipercinética.</li>
+            <li>• <strong>Associações autoimunes:</strong> vitiligo, doença de Addison, anemia perniciosa, miastenia grave.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-sm font-bold text-indigo-700 dark:text-indigo-300 uppercase tracking-wide mb-2">Hipotireoidismo: Achados Sistêmicos</h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li>• <strong>Coração & ECG:</strong> PA normal ou pouco elevada (↑ RVP), pulso fino, bulhas hipofonéticas, derrame pericárdico; hipercolesterolemia; ECG com bradicardia, baixa voltagem e alteração difusa da repolarização.</li>
+            <li>• <strong>Abdome:</strong> ascite volumosa exsudativa (hipofunção grave), hepatomegalia, megacólon/fecaloma, íleo paralítico.</li>
+            <li>• <strong>Outros:</strong> osteoporose, hipercalcemia, mucosas hipocrômicas (anemia), túnel do carpo (infiltração do mediano).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Seção 2.2: Tabela Comparativa Interativa de Sinais no Exame Físico -->
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+        <div class="p-5 border-b border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.2 • Exame Físico Geral</span>
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Sinais Clínicos: Hipertireoidismo vs. Hipotireoidismo</h2>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Tireoide sobe à deglutição "em seco". Lobo direito costuma ser um pouco maior; bócio = aumento; nódulos palpáveis em 4–5% (20% no USG).</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="segmentFilter" class="text-xs sm:text-sm rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3.5 py-2 font-medium outline-none focus:border-thyroid-500">
+              <option value="todos">Todos os Segmentos</option>
+            </select>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-50 dark:bg-slate-800/80 text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">
+                <th class="py-3.5 px-4 font-bold">Segmento / Sistema</th>
+                <th class="py-3.5 px-4 font-bold text-amber-700 dark:text-amber-400">Hipertireoidismo</th>
+                <th class="py-3.5 px-4 font-bold text-indigo-700 dark:text-indigo-400">Hipotireoidismo</th>
+              </tr>
+            </thead>
+            <tbody id="physicalExamTableBody" class="divide-y divide-slate-100 dark:divide-slate-800 text-sm"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- ABA 3: SINTOMAS LOCAIS, SISTÊMICOS & SITUAÇÕES ESPECIAIS (SEÇÃO 2.3)  -->
+    <!-- ===================================================================== -->
+    <section id="tab-sintomas" class="tab-panel hidden space-y-8">
+      <!-- Sintomas Locais (Compressivos e Inflamatórios) -->
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.3 • Sintomas Locais</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Manifestações Cervicais Locais & Compressivas</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+          <div class="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/70 dark:border-amber-800/50">
+            <h3 class="font-bold text-amber-800 dark:text-amber-300">Dor Cervical Anterior</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 mt-1"><strong>Tireoidite subaguda:</strong> piora ao deglutir e palpar, irradia para mandíbula e ouvido, com febre baixa. Diferenciar de amigdalite/faringite.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/60">
+            <h3 class="font-bold text-thyroid-700 dark:text-thyroid-300">Dispneia</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 mt-1">Compressão traqueal extrínseca; piora caracteristicamente ao <strong>fletir a cabeça</strong> (bócio mergulhante/volumoso).</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/60">
+            <h3 class="font-bold text-thyroid-700 dark:text-thyroid-300">Disfonia (Rouquidão)</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 mt-1">Comprometimento ou invasão do <strong>nervo laríngeo recorrente</strong>.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-rose-50/70 dark:bg-rose-950/30 border border-rose-200/70 dark:border-rose-800/50">
+            <h3 class="font-bold text-rose-800 dark:text-rose-300">Disfagia & Surgimento Súbito</h3>
+            <p class="text-xs text-slate-700 dark:text-slate-300 mt-1">Compressão do esôfago. Surgimento súbito ou crescimento em semanas = <strong>suspeitar de câncer anaplásico</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabela Comparativa de Sintomas Sistêmicos -->
+      <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+        <div class="p-5 border-b border-slate-200 dark:border-slate-800">
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.3 • Sintomas Sistêmicos</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Quadro Clínico Sistêmico por Aparelho</h2>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-50 dark:bg-slate-800/80 text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800">
+                <th class="py-3.5 px-4 font-bold">Sistema</th>
+                <th class="py-3.5 px-4 font-bold text-amber-700 dark:text-amber-400">Hipertireoidismo</th>
+                <th class="py-3.5 px-4 font-bold text-indigo-700 dark:text-indigo-400">Hipotireoidismo</th>
+              </tr>
+            </thead>
+            <tbody id="symptomsTableBody" class="divide-y divide-slate-100 dark:divide-slate-800 text-sm"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Situações Especiais -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-base font-bold text-rose-700 dark:text-rose-400 mb-1.5">Coma Mixedematoso</h3>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Evolução final do hipotireoidismo grave não tratado; desencadeado por estresse (infecção, trauma, cirurgia) ou medicamentos depressores (barbitúricos, tranquilizantes).</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-base font-bold text-indigo-700 dark:text-indigo-300 mb-1.5">Hipotireoidismo Subclínico</h3>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Pouco sintomático, sobretudo em <strong>mulheres no pós-climatério</strong>; diagnóstico essencialmente laboratorial, deve ser tratado. As alterações discretas da pele costumam levantar a suspeita.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-base font-bold text-amber-700 dark:text-amber-300 mb-1.5">Hipertireoidismo no Idoso (Apático)</h3>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Pode cursar com <strong>anorexia</strong> em vez de polifagia/apetite aumentado; pacientes previamente constipados podem relatar aparente <em>"melhora"</em> do hábito intestinal.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-base font-bold text-thyroid-700 dark:text-thyroid-300 mb-1.5">Tireoidite Subaguda (Diagnóstico Diferencial)</h3>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">Dor cervical anterior que piora ao deglutir/palpar e irradia para mandíbula e ouvido — deve ser diferenciada cuidadosamente de <strong>amigdalite</strong> e <strong>faringite</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- ABA 4: TRÍADES, PATOGNOMÔNICOS & SINAIS DE ALARME (2.4, 2.5, 2.5.1)   -->
+    <!-- ===================================================================== -->
+    <section id="tab-triades" class="tab-panel hidden space-y-8">
+      <!-- Seção 2.4: Tríade de Merseburg -->
+      <div>
+        <div class="mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.4</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Tríade Clássica da Tireoide</h2>
+        </div>
+        <div id="triadesGrid" class="grid grid-cols-1 gap-4"></div>
+      </div>
+
+      <!-- Seção 2.5.1: Sinais de Alarme (Nódulo Suspeito & Emergências Tireoidianas) -->
+      <div class="space-y-6">
+        <div>
+          <div class="mb-4 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">Seção 2.5.1 • Parte A</span>
+              <h2 class="text-xl font-bold text-slate-900 dark:text-white">Sinais de Alarme: Nódulo ou Bócio Suspeito de Câncer / Compressão</h2>
+            </div>
+            <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300 border border-rose-300 dark:border-rose-800">8 Sinais de Alerta</span>
+          </div>
+          <div id="noduleAlarmsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </div>
+
+        <div>
+          <div class="mb-4 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Seção 2.5.1 • Parte B</span>
+              <h2 class="text-xl font-bold text-slate-900 dark:text-white">Emergências da Função Tireoidiana & Tratamento</h2>
+            </div>
+            <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border border-amber-300 dark:border-amber-800">5 Emergências Críticas</span>
+          </div>
+          <div id="emergencyAlarmsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+      </div>
+
+      <!-- Seção 2.5: Achados Patognomônicos / Associações Clássicas -->
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.5</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Achados Patognomônicos & Correlações Diretas (13 Pontos)</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Marque cada item conforme for revisando.</p>
+        </div>
+        <div id="pathognomonicList" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- ABA 5: MANOBRAS ESPECIAIS (SEÇÃO 2.6)                                 -->
+    <!-- ===================================================================== -->
+    <section id="tab-manobras" class="tab-panel hidden space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Seção 2.6</span>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">Manobras Especiais e Testes Semiológicos da Tireoide (11 Técnicas)</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Técnica de execução, parâmetros de normalidade e interpretação clínica.</p>
+        </div>
+      </div>
+      <div id="maneuversGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- ABA 6: SIMULADO & FLASHCARDS (ACTIVE RECALL)                          -->
+    <!-- ===================================================================== -->
+    <section id="tab-quiz" class="tab-panel hidden space-y-6">
+      <!-- Barra Superior de Alternância: Modo Prova vs Flashcards -->
+      <div class="flex flex-wrap items-center justify-between gap-4 bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="flex flex-wrap items-center gap-2">
+          <button id="modeQuizBtn" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-thyroid-600 text-white shadow-sm transition">🎯 Simulado / Prova (A–E)</button>
+          <button id="modeFlashBtn" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">🃏 Flashcards Rápidos</button>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5 text-xs sm:text-sm">
+          <span class="px-3 py-1.5 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-bold">Acertos: <span id="quizScoreHits">0</span></span>
+          <span class="px-3 py-1.5 rounded-xl bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 font-bold">Erros: <span id="quizScoreMisses">0</span></span>
+          <span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold">Aproveitamento: <span id="quizAccuracyPct">0%</span></span>
+        </div>
+      </div>
+
+      <!-- Painel Configurador do Treino -->
+      <div id="quizConfigBar" class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 flex-1">
+            <!-- Modo de Questões -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">1. Modo de Treino</label>
+              <select id="quizModeSelect" class="w-full text-xs sm:text-sm rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-2.5 font-semibold outline-none focus:border-thyroid-500">
+                <option value="visual">🖼️ Identificação Visual (23 Imagens do Atlas)</option>
+                <option value="casos">🏥 Casos Clínicos, Tríade & Alarme (12 Questões)</option>
+                <option value="manobras">🩺 Manobras & Propedêutica (10 Questões)</option>
+                <option value="misto">🎲 Simulado Misto Completo (Todas as 45)</option>
+                <option value="erros" id="wrongOnlyOption" disabled>🔁 Treinar Apenas o que Errei (0)</option>
+              </select>
+            </div>
+
+            <!-- Quantidade de Questões -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">2. Quantidade</label>
+              <select id="quizLimitSelect" class="w-full text-xs sm:text-sm rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-2.5 font-semibold outline-none focus:border-thyroid-500">
+                <option value="10">10 Questões (Rápido)</option>
+                <option value="20" selected>20 Questões (Padrão)</option>
+                <option value="all">Todas do Modo Selecionado</option>
+              </select>
+            </div>
+
+            <!-- Tipo de Correção -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">3. Correção / Feedback</label>
+              <select id="quizFeedbackSelect" class="w-full text-xs sm:text-sm rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3 py-2.5 font-semibold outline-none focus:border-thyroid-500">
+                <option value="immediate">⚡ Feedback Imediato (Explicação a cada item)</option>
+                <option value="exam">📝 Modo Prova (Gabarito e nota só no final)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 shrink-0">
+            <button id="startCustomQuizBtn" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-thyroid-600/20 transition">
+              Iniciar Novo Treino
+            </button>
+            <button id="retryWrongBtn" class="hidden px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs sm:text-sm font-bold shadow transition">
+              🔁 Revisar Erros (<span id="wrongCountBadge">0</span>)
+            </button>
+          </div>
+        </div>
+
+        <!-- Barra de Progresso do Simulado -->
+        <div class="pt-1">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+            <span id="quizProgressText" class="font-semibold">Progresso: Questão 1 de 20</span>
+            <span class="hidden sm:inline text-[11px]">Atalhos: teclas <kbd class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-mono">A–E</kbd> ou <kbd class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-mono">1–5</kbd> para responder • <kbd class="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-mono">Enter</kbd> avança</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+            <div id="quizProgressBar" class="h-full bg-gradient-to-r from-thyroid-500 to-indigo-500 transition-all duration-300" style="width: 5%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container Ativo da Questão -->
+      <div id="quizContainer" class="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-md space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+          <span id="quizQuestionCounter" class="font-extrabold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Questão 1 de 20</span>
+          <div class="flex items-center gap-2">
+            <span id="quizModeTag" class="px-2.5 py-1 rounded-full bg-thyroid-50 dark:bg-thyroid-950/70 text-thyroid-700 dark:text-thyroid-300 font-semibold border border-thyroid-200/70 dark:border-thyroid-800/60">Identificação Visual</span>
+            <span id="quizCategoryBadge" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium">Seção 2.7</span>
+          </div>
+        </div>
+
+        <!-- Bloco Visual da Questão -->
+        <div id="quizImageWrapper" class="hidden rounded-2xl bg-slate-100 dark:bg-slate-950 p-4 border border-slate-200 dark:border-slate-800">
+          <!-- Quando a imagem já foi extraída do PDF -->
+          <div id="quizImageLoadedBox" class="hidden flex flex-col items-center gap-2">
+            <div class="relative group cursor-zoom-in" onclick="openQuizImageZoom()">
+              <img id="quizImageEl" class="max-h-64 sm:max-h-72 w-auto rounded-xl object-contain shadow-md border border-slate-300/60 dark:border-slate-700" alt="Imagem clínica da questão" />
+              <span class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-slate-900/80 text-white text-[11px] font-semibold backdrop-blur-sm">🔍 Ampliar imagem</span>
+            </div>
+            <span id="quizImageCaption" class="text-[11px] text-slate-500 dark:text-slate-400">Observe atentamente os achados cervicais, faciais, ungueais ou cutâneos acima.</span>
+          </div>
+
+          <!-- Quando o PDF ainda não foi carregado -->
+          <div id="quizImageMissingBox" class="hidden flex flex-col sm:flex-row items-center justify-between gap-3 py-2 px-3">
+            <div class="flex items-center gap-3 text-left">
+              <div class="w-10 h-10 rounded-xl bg-thyroid-100 dark:bg-thyroid-900/60 text-thyroid-700 dark:text-thyroid-300 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z" /></svg>
+              </div>
+              <div>
+                <p class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-200">Questão com fotografia clínica do <code class="text-thyroid-600 dark:text-thyroid-400">Tireoide.pdf</code></p>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Anexe o arquivo <code class="font-mono">Tireoide.pdf</code> para visualizar a imagem original desta questão agora mesmo.</p>
+              </div>
+            </div>
+            <label class="cursor-pointer px-4 py-2 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-xs font-bold shadow shrink-0 transition">
+              📎 Anexar Tireoide.pdf
+              <input id="quickQuizPdfInput" type="file" accept="application/pdf" class="hidden" />
+            </label>
+          </div>
+        </div>
+
+        <!-- Enunciado da Questão -->
+        <h3 id="quizQuestionText" class="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-relaxed"></h3>
+
+        <!-- Alternativas A, B, C, D, E -->
+        <div id="quizOptionsList" class="space-y-2.5"></div>
+
+        <!-- Caixa de Explicação Detalhada -->
+        <div id="quizExplanationBox" class="hidden p-4 rounded-xl bg-thyroid-50/90 dark:bg-thyroid-950/60 border border-thyroid-200 dark:border-thyroid-800 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed"></div>
+
+        <!-- Rodapé de Navegação da Questão -->
+        <div class="flex items-center justify-between pt-3 border-t border-slate-100 dark:border-slate-800">
+          <button id="prevQuestionBtn" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-semibold disabled:opacity-40 transition">
+            ← Anterior
+          </button>
+          <button id="nextQuestionBtn" class="hidden px-6 py-2.5 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-xs sm:text-sm font-bold shadow transition">
+            Próxima Questão →
+          </button>
+        </div>
+      </div>
+
+      <!-- Relatório Final de Desempenho por Tema -->
+      <div id="quizSummaryReport" class="hidden max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-lg space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-200 dark:border-slate-800">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Resultado Final do Treino</span>
+            <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white mt-1">Relatório de Desempenho Semiológico</h3>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="text-center px-4 py-2.5 rounded-2xl bg-thyroid-50 dark:bg-thyroid-950/70 border border-thyroid-200 dark:border-thyroid-800">
+              <span id="reportFinalPct" class="block text-2xl font-extrabold text-thyroid-700 dark:text-thyroid-300">0%</span>
+              <span class="text-[11px] font-semibold text-slate-500">Aproveitamento</span>
+            </div>
+            <div class="text-center px-4 py-2.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800">
+              <span id="reportHitsCount" class="block text-2xl font-extrabold text-emerald-700 dark:text-emerald-300">0/0</span>
+              <span class="text-[11px] font-semibold text-slate-500">Acertos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desempenho por Tema -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">Desempenho por Área / Tema do PDF</h4>
+          <div id="reportCategoryBreakdown" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+        </div>
+
+        <!-- Gabarito Comentado das Questões Respondidas -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">Revisão do Gabarito</h4>
+          <div id="reportReviewList" class="space-y-3 max-h-[460px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <!-- Ações Pós-Prova -->
+        <div class="flex flex-wrap items-center justify-end gap-3 pt-4 border-t border-slate-200 dark:border-slate-800">
+          <button id="reportRetryWrongBtn" class="hidden px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold shadow transition">
+            🔁 Treinar Apenas as que Errei
+          </button>
+          <button id="reportRestartBtn" class="px-5 py-2.5 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-sm font-bold shadow transition">
+            Iniciar Novo Simulado
+          </button>
+        </div>
+      </div>
+
+      <!-- Container dos Flashcards -->
+      <div id="flashcardsContainer" class="hidden max-w-2xl mx-auto space-y-5">
+        <div class="flex items-center justify-between text-xs text-slate-500">
+          <span id="flashCounter" class="font-bold text-thyroid-600 dark:text-thyroid-400">Card 1 de 24</span>
+          <span>Clique no cartão para virar</span>
+        </div>
+        <div id="flashcardBox" class="card-flip cursor-pointer select-none h-72 sm:h-80">
+          <div id="flashcardInner" class="card-inner relative w-full h-full">
+            <!-- Frente -->
+            <div class="card-face absolute inset-0 bg-white dark:bg-slate-900 rounded-2xl border-2 border-thyroid-500/30 shadow-lg p-6 flex flex-col items-center justify-center text-center">
+              <span id="flashFrontTag" class="px-3 py-1 rounded-full text-xs font-bold bg-thyroid-100 dark:bg-thyroid-900/60 text-thyroid-700 dark:text-thyroid-300 mb-4">Pergunta</span>
+              <img id="flashFrontImg" class="hidden max-h-32 rounded-lg mb-3 object-contain shadow" alt="Flashcard" />
+              <p id="flashFrontText" class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white"></p>
+            </div>
+            <!-- Verso -->
+            <div class="card-face card-back absolute inset-0 bg-gradient-to-br from-thyroid-700 to-indigo-800 text-white rounded-2xl shadow-lg p-6 flex flex-col items-center justify-center text-center">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 text-white mb-4">Resposta / Significado Clínico</span>
+              <p id="flashBackText" class="text-base sm:text-lg font-medium leading-relaxed whitespace-pre-line"></p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-3">
+          <button id="prevFlashBtn" class="px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:bg-slate-100 transition">← Anterior</button>
+          <button id="flipFlashBtn" class="px-5 py-2.5 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-sm font-bold transition">Virar Cartão</button>
+          <button id="nextFlashBtn" class="px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:bg-slate-100 transition">Próximo →</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Lightbox para Ampliação & Reassociação de Imagens do Atlas -->
+  <div id="imageLightboxModal" class="hidden fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
+      <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-200 dark:border-slate-800">
+        <div>
+          <span id="lightboxBadge" class="text-xs font-bold text-thyroid-600 dark:text-thyroid-400 uppercase">Seção 2.7 • Atlas</span>
+          <h3 id="lightboxTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Achado</h3>
+        </div>
+        <button id="closeLightboxBtn" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-slate-600 dark:text-slate-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="p-5 space-y-4 max-h-[82vh] overflow-y-auto">
+        <div class="bg-slate-100 dark:bg-slate-950 rounded-xl p-3 flex items-center justify-center min-h-[220px]">
+          <img id="lightboxImg" class="max-h-80 w-auto rounded-lg object-contain shadow" alt="Imagem ampliada" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70">
+            <span class="text-xs font-bold uppercase text-slate-400 block mb-1">O que é (Descrição):</span>
+            <p id="lightboxDesc" class="text-slate-800 dark:text-slate-200 font-medium"></p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-thyroid-50/70 dark:bg-thyroid-950/40 border border-thyroid-200/60 dark:border-thyroid-800/50">
+            <span class="text-xs font-bold uppercase text-thyroid-600 dark:text-thyroid-400 block mb-1">Patologia Associada:</span>
+            <p id="lightboxPathology" class="text-slate-900 dark:text-white font-semibold"></p>
+          </div>
+        </div>
+        <!-- Seletor para trocar manualmente qual imagem extraída do PDF está vinculada a este card -->
+        <div id="lightboxReassignBox" class="hidden pt-3 border-t border-slate-200 dark:border-slate-800">
+          <label class="block text-xs font-semibold text-slate-500 mb-1.5">Ajustar imagem extraída do PDF vinculada a esta ficha:</label>
+          <div class="flex gap-2">
+            <select id="lightboxImageSelect" class="flex-1 text-xs rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-3 py-2"></select>
+            <button id="saveReassignBtn" class="px-4 py-2 rounded-xl bg-thyroid-600 hover:bg-thyroid-700 text-white text-xs font-bold">Aplicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden transform transition-all duration-300 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-3 rounded-xl shadow-xl text-xs sm:text-sm font-semibold flex items-center gap-2.5">
+    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+    <span id="toastMessage">Pronto!</span>
+  </div>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-5 px-4 text-center text-xs text-slate-500 dark:text-slate-400 mt-10">
+    Habilidades Médicas 4º Bimestre — Parte 2: Semiologia da Tireoide • Baseado integralmente em <code class="font-mono">Tireoide.pdf</code>
+  </footer>
+
+  <!-- ======================================================================= -->
+  <!-- JAVASCRIPT: DADOS COMPLETOS DO PDF + MOTOR EXTRATOR PDF.JS              -->
+  <!-- ======================================================================= -->
+  <script>
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+
+    // =========================================================================
+    // 1. DADOS ESTRUTURADOS INTEGRALMENTE DO Tireoide.pdf (SEÇÕES 2.1 A 2.7)
+    // =========================================================================
+
+    // Seção 2.7: Todas as 23 Fichas Clínicas das Páginas 6 a 11
+    const ATLAS_ITEMS = [
+      // Página 6
+      { id: 1, page: 6, region: "bocio-cervical", achado: "Bócio / nódulo volumoso", oQueE: "Abaulamento cervical anterior que sobe ao deglutir.", patologia: "Bócio endêmico ou multinodular, Graves; crescimento rápido = suspeitar de câncer" },
+      { id: 2, page: 6, region: "hiper-graves", achado: "Fácies basedowiana", oQueE: "Olhar fixo de 'espanto', exoftalmia, retração palpebral, face emagrecida.", patologia: "Hipertireoidismo (Doença de Graves)" },
+      { id: 3, page: 6, region: "hipo-mixedema", achado: "Fácies mixedematosa", oQueE: "Face infiltrada e apática, bolsas palpebrais, sobrancelhas rarefeitas.", patologia: "Hipotireoidismo grave (mixedema)" },
+      // Página 7
+      { id: 4, page: 7, region: "hiper-graves", achado: "Mixedema pré-tibial", oQueE: "Placas vermelho-acastanhadas, rugosas ('pele de porco'), indolores, na face anterolateral das pernas.", patologia: "Doença de Graves (~5% dos pacientes)" },
+      { id: 5, page: 7, region: "hiper-graves", achado: "Unhas de Plummer", oQueE: "Onicólise: descolamento distal da lâmina ungueal do leito.", patologia: "Hipertireoidismo" },
+      { id: 6, page: 7, region: "hiper-graves", achado: "Oftalmopatia de Graves", oQueE: "Retração palpebral, proptose, edema palpebral e hiperemia conjuntival (classes 1–3).", patologia: "Doença de Graves" },
+      { id: 7, page: 7, region: "hipo-mixedema", achado: "Macroglossia", oQueE: "Língua aumentada, protrusa, frequentemente com marca dos dentes nas bordas.", patologia: "Hipotireoidismo (também acromegalia, amiloidose)" },
+      { id: 8, page: 7, region: "bocio-cervical", achado: "Palpação da tireoide", oQueE: "Abordagem anterior com os polegares (ou posterior), pedindo deglutição 'em seco'.", patologia: "Técnica semiológica fundamental do exame cervical" },
+      // Página 8
+      { id: 9, page: 8, region: "bocio-cervical", achado: "Bócio mergulhante", oQueE: "Bócio que desce para trás do esterno (polo inferior não palpável); pode comprimir traqueia, esôfago e veias.", patologia: "Bócio multinodular volumoso; dispneia ao fletir a cabeça" },
+      { id: 10, page: 8, region: "bocio-cervical", achado: "Sinal de Pemberton", oQueE: "Elevar os braços acima da cabeça (~1 min) causa pletora facial, turgência jugular e dispneia.", patologia: "Bócio mergulhante comprimindo a entrada torácica" },
+      { id: 11, page: 8, region: "bocio-cervical", achado: "Bócio difuso", oQueE: "Aumento global e simétrico da glândula, podendo apresentar frêmito e sopro.", patologia: "Doença de Graves; tireoidite de Hashimoto" },
+      { id: 12, page: 8, region: "bocio-cervical", achado: "Bócio multinodular", oQueE: "Glândula aumentada e irregular, com vários nódulos palpáveis.", patologia: "Predomina após a 4ª década e em regiões pobres em iodo" },
+      { id: 13, page: 8, region: "bocio-cervical", achado: "Nódulo tireoidiano único", oQueE: "Nódulo visível/palpável que sobe ao deglutir; pesquisar linfonodos satélites.", patologia: "Adenoma, cisto ou carcinoma (duro, fixo, crescimento rápido)" },
+      // Página 9
+      { id: 14, page: 9, region: "hiper-graves", achado: "Tremor fino das mãos", oQueE: "Tremor fino de extremidades evidente com braços estendidos e dedos afastados (papel sobre as mãos).", patologia: "Hipertireoidismo" },
+      { id: 15, page: 9, region: "hipo-mixedema", achado: "Rarefação do terço externo da sobrancelha", oQueE: "Perda do terço lateral da sobrancelha (sinal de Hertoghe).", patologia: "Hipotireoidismo" },
+      { id: 16, page: 9, region: "hipo-mixedema", achado: "Edema periorbital", oQueE: "Bolsas palpebrais e edema periorbital não depressível.", patologia: "Hipotireoidismo (mixedema)" },
+      { id: 17, page: 9, region: "hipo-mixedema", achado: "Pele seca e descamativa / amarelada", oQueE: "Pele seca, áspera, fria ('pele de papiro'); tom amarelado por acúmulo de caroteno.", patologia: "Hipotireoidismo" },
+      { id: 18, page: 9, region: "hiper-graves", achado: "Acropatia tireoidiana", oQueE: "Baqueteamento digital associado a edema de partes moles dos dedos.", patologia: "Doença de Graves (~1% dos casos)" },
+      // Página 10
+      { id: 19, page: 10, region: "hiper-graves", achado: "Ginecomastia", oQueE: "Aumento mamário no homem por elevação da relação estrogênio/andrógeno.", patologia: "Hipertireoidismo" },
+      { id: 20, page: 10, region: "hipo-mixedema", achado: "Cretinismo", oQueE: "Baixa estatura, fácies infiltrada, macroglossia e retardo mental.", patologia: "Hipotireoidismo congênito" },
+      { id: 21, page: 10, region: "hipo-mixedema", achado: "Unhas com sulcos transversos", oQueE: "Unhas frágeis, quebradiças, com sulcos transversos (a foto ilustrativa do PDF mostra estrias longitudinais, que não são o achado típico).", patologia: "Hipotireoidismo" },
+      { id: 22, page: 10, region: "hipo-mixedema", achado: "Cabelos secos e queda", oQueE: "Cabelos secos, sem brilho, quebradiços e rarefeitos.", patologia: "Hipotireoidismo" },
+      { id: 23, page: 10, region: "hiper-graves", achado: "Atrofia muscular proximal", oQueE: "Atrofia de cintura escapular/pélvica; dificuldade para levantar sem apoio das mãos ou subir escadas.", patologia: "Miopatia tireotóxica (hipertireoidismo)" },
+      // Página 11
+      { id: 24, page: 11, region: "hiper-graves", achado: "Face caquética (sem bola de Bichat)", oQueE: "Face emagrecida por perda da gordura das bochechas (ausência da bola de Bichat).", patologia: "Hipertireoidismo grave" },
+      { id: 25, page: 11, region: "hiper-graves", achado: "Vitiligo", oQueE: "Máculas acrômicas bem delimitadas na pele.", patologia: "Autoimunidade associada à Doença de Graves / Tireoidite de Hashimoto" }
+    ];
+
+    // =========================================================================
+    // BANCO DE 45 QUESTÕES DE MÚLTIPLA ESCOLHA (A, B, C, D, E)
+    // =========================================================================
+
+    // MODO 1: 23 Questões de Identificação Visual (baseadas nas imagens da Seção 2.7)
+    const VISUAL_QUESTIONS = [
+      {
+        mode: "visual", cat: "Exame Cervical (2.7)", atlasId: 1,
+        q: "Observe a imagem (Pág. 6). Nota-se abaulamento cervical anterior visível que se desloca cranialmente durante a deglutição. Qual é o achado e quando suspeitar de neoplasia?",
+        opts: [
+          "Bócio / nódulo volumoso — suspeitar de câncer se houver crescimento rápido em semanas ou poucos meses",
+          "Cisto tireoglosso infectado — nunca se movimenta com a deglutição",
+          "Linfadenopatia supraclavicular isolada — sinal patognomônico de hipotireoidismo",
+          "Mixedema pré-tibial cervical — depósito de mucopolissacarídeos",
+          "Abscesso retrofaríngeo — sempre associado à crise tireotóxica"
+        ],
+        ans: 0,
+        exp: "O abaulamento cervical anterior que sobe ao deglutir caracteriza o bócio ou nódulo tireoidiano (bócio endêmico, multinodular ou Graves); crescimento rápido sugere carcinoma, sobretudo anaplásico."
+      },
+      {
+        mode: "visual", cat: "Fácies & Graves (2.7)", atlasId: 2,
+        q: "Identifique o padrão facial ilustrado na imagem (Pág. 6): olhar fixo de 'medo/espanto', brilho ocular, exoftalmia, retração palpebral e face emagrecida.",
+        opts: [
+          "Fácies basedowiana — característica do hipertireoidismo (Doença de Graves)",
+          "Fácies mixedematosa — característica do hipotireoidismo grave",
+          "Fácies cushingoide — hipercortisolismo exógeno",
+          "Fácies acromegálica — excesso de GH com macroglossia",
+          "Fácies miastênica — ptose bilateral flutuante"
+        ],
+        ans: 0,
+        exp: "A fácies basedowiana apresenta olhar brilhante de 'medo/espanto', retração palpebral e exoftalmia, sendo típica do hipertireoidismo na Doença de Graves."
+      },
+      {
+        mode: "visual", cat: "Fácies & Hipotireoidismo (2.7)", atlasId: 3,
+        q: "Em contraste com o hipertireoidismo, a imagem (Pág. 6) demonstra face infiltrada, expressão apática, bolsas subpalpebrais e rarefação das sobrancelhas. Qual é esse achado?",
+        opts: [
+          "Fácies mixedematosa — hipotireoidismo grave (mixedema)",
+          "Fácies basedowiana — doença de Graves ativa",
+          "Síndrome de Claude Bernard-Horner bilateral",
+          "Face caquética com perda da bola de Bichat",
+          "Sinal de Pemberton positivo por bócio mergulhante"
+        ],
+        ans: 0,
+        exp: "A fácies mixedematosa (apática, pele infiltrada, bolsas subpalpebrais, macroglossia e rarefação do terço externo das sobrancelhas) reflete hipotireoidismo grave."
+      },
+      {
+        mode: "visual", cat: "Manifestações Cutâneas (2.7)", atlasId: 4,
+        q: "Na imagem (Pág. 7), observam-se placas elevadas, brilhantes, vermelho-acastanhadas e rugosas ('pele de porco'), indolores, na face anterolateral das pernas. Qual é o diagnóstico e sua prevalência?",
+        opts: [
+          "Mixedema pré-tibial — ocorre em ~5% dos pacientes com Doença de Graves (hipertireoidismo)",
+          "Edema depressível de insuficiência cardíaca descompensada no hipotireoidismo",
+          "Eritema nodoso estreptocócico associado à tireoidite subaguda",
+          "Acropatia tireoidiana — ocorre em 50% dos pacientes com Hashimoto",
+          "Icterícia cutânea por hipercarotenemia no hipotireoidismo"
+        ],
+        ans: 0,
+        exp: "Apesar do nome 'mixedema', o mixedema pré-tibial ('pele de porco') é uma dermopatia infiltrativa da Doença de Graves (hipertireoidismo), presente em cerca de 5% dos casos."
+      },
+      {
+        mode: "visual", cat: "Unhas & Fâneros (2.7)", atlasId: 5,
+        q: "Observe a alteração ungueal mostrada na imagem (Pág. 7), caracterizada pelo descolamento distal da lâmina ungueal em relação ao leito. Como se denomina esse sinal?",
+        opts: [
+          "Unhas de Plummer (onicólise) — sinal clássico de hipertireoidismo",
+          "Sulcos transversos de Beau — sinal típico de hipotireoidismo",
+          "Baqueteamento digital — acropatia tireoidiana",
+          "Coiloníquia — anemia ferropriva grave",
+          "Onicomicose distrófica por Candida"
+        ],
+        ans: 0,
+        exp: "As unhas de Plummer correspondem à onicólise (descolamento distal da unha do leito), sendo um achado clássico e patognomônico de hipertireoidismo."
+      },
+      {
+        mode: "visual", cat: "Oftalmopatia (2.7)", atlasId: 6,
+        q: "Na imagem (Pág. 7), há retração palpebral, proptose, edema palpebral e hiperemia conjuntival. Na classificação da oftalmopatia tireotóxica (classes 1 a 6), a quais classes esses achados correspondem?",
+        opts: [
+          "Classes 1 a 3 (retração/lid-lag, edema palpebral/conjuntival e proptose > 23 mm)",
+          "Classes 5 e 6 exclusivamente (úlcera de córnea e cegueira)",
+          "Classe 0 — ausência total de comprometimento orbitário",
+          "Apenas classe 4 — paralisia isolada da convergência",
+          "Oftalmopatia exclusiva do hipotireoidismo subclínico"
+        ],
+        ans: 0,
+        exp: "Na oftalmopatia tireotóxica de Graves: Classe 1 = retração palpebral / Von Graefe; Classe 2 = edema palpebral, conjuntival e glândulas lacrimais; Classe 3 = proptose (> 23 mm) e lagoftalmia."
+      },
+      {
+        mode: "visual", cat: "Cavidade Oral (2.7)", atlasId: 7,
+        q: "Na fotografia (Pág. 7), nota-se língua aumentada e protrusa, frequentemente marcada pelos dentes nas bordas laterais. Qual é o achado e sua relação tireoidiana?",
+        opts: [
+          "Macroglossia — hipotireoidismo (também observada em acromegalia e amiloidose)",
+          "Glossite atrófica de Hunter — hipertireoidismo factício",
+          "Leucoplasia pilosa — tireoidite subaguda de De Quervain",
+          "Atrofia lingual — crise tireotóxica",
+          "Candidíase pseudomembranosa — uso de propranolol"
+        ],
+        ans: 0,
+        exp: "A macroglossia com impressão dentária nas bordas é um achado clássico do hipotireoidismo (infiltração mixedematosa), tendo como diferenciais acromegalia e amiloidose."
+      },
+      {
+        mode: "visual", cat: "Técnica Semiológica (2.7)", atlasId: 8,
+        q: "A imagem (Pág. 7) demonstra a palpação da tireoide pela abordagem anterior com os polegares. Qual manobra dinâmica deve ser solicitada simultaneamente ao paciente?",
+        opts: [
+          "Deglutição 'em seco' — pois a tireoide é envolvida pela fáscia pré-traqueal e sobe ao deglutir",
+          "Manobra de Valsalva forçada — para provocar turgência jugular",
+          "Elevação dos braços acima da cabeça por 1 minuto",
+          "Extensão cervical máxima com expiração forçada",
+          "Abertura bucal ampla com protrusão lingual"
+        ],
+        ans: 0,
+        exp: "Durante a inspeção e palpação (anterior ou posterior), solicita-se sempre a deglutição 'em seco': a tireoide sobe ao deglutir, diferenciando-a de outras massas cervicais."
+      },
+      {
+        mode: "visual", cat: "Bócio & Tórax (2.7)", atlasId: 9,
+        q: "Na imagem (Pág. 8), observa-se grande bócio que se estende inferiormente para trás do esterno, impedindo a palpação de seu polo inferior. Como se denomina essa condição e qual seu principal sintoma posicional?",
+        opts: [
+          "Bócio mergulhante — dispneia por compressão traqueal que piora ao fletir a cabeça",
+          "Bócio difuso simples — hiper-reflexia aquileia isolada",
+          "Cisto branquial lateral — dor que irradia ao ouvido",
+          "Tireoidite aguda supurativa — bradicardia e hipotermia",
+          "Nódulo autônomo tóxico — ausência de sintomas compressivos"
+        ],
+        ans: 0,
+        exp: "No bócio mergulhante (subesternal), o polo inferior não é palpável na fúrcula esternal; ele pode comprimir traqueia, esôfago e veias, causando dispneia ao fletir a cabeça."
+      },
+      {
+        mode: "visual", cat: "Manobra Especial (2.7)", atlasId: 10,
+        q: "Ao elevar ambos os braços acima da cabeça por ~1 minuto (Pág. 8), o paciente desenvolve pletora facial, turgência jugular e dispneia. Qual é o nome desse sinal?",
+        opts: [
+          "Sinal de Pemberton — indica bócio mergulhante comprimindo o estreito torácico superior",
+          "Sinal de Von Graefe — indica retração palpebral no hipertireoidismo",
+          "Sinal de Hertoghe — rarefação do terço lateral da sobrancelha",
+          "Sinal de Chvostek — hipocalcemia pós-tireoidectomia",
+          "Unhas de Plummer — descolamento distal ungueal"
+        ],
+        ans: 0,
+        exp: "A elevação dos braços estreita a abertura torácica superior; na presença de bócio mergulhante, surge congestão venosa (pletora facial, turgência jugular e dispneia) = Sinal de Pemberton positivo."
+      },
+      {
+        mode: "visual", cat: "Exame Cervical (2.7)", atlasId: 11,
+        q: "Na fotografia (Pág. 8), nota-se aumento global, uniforme e simétrico de toda a glândula tireoide (bócio difuso). Quais são as duas principais etiologias?",
+        opts: [
+          "Doença de Graves (pode ter frêmito e sopro) e Tireoidite de Hashimoto",
+          "Carcinoma anaplásico e cisto tireoglosso",
+          "Adenoma folicular solitário e metástase linfonodal",
+          "Intoxicação por lítio e hipercortisolismo",
+          "Tireoidite aguda bacteriana e amiloidose"
+        ],
+        ans: 0,
+        exp: "O bócio difuso (aumento global e simétrico) ocorre principalmente na Doença de Graves (onde a hipervascularização gera frêmito e sopro) e na tireoidite de Hashimoto."
+      },
+      {
+        mode: "visual", cat: "Exame Cervical (2.7)", atlasId: 12,
+        q: "Observe a glândula aumentada de volume e de superfície irregular com múltiplos nódulos (Pág. 8). Qual é o perfil epidemiológico clássico desse achado?",
+        opts: [
+          "Bócio multinodular — predomina após a 4ª década de vida e em regiões pobres em iodo",
+          "Bócio endêmico neonatal — exclusivo de recém-nascidos do sexo masculino",
+          "Tireoidite subaguda — sempre cursa com sopro sistólico intenso",
+          "Hipertireoidismo factício — ocorre apenas em crianças",
+          "Cretinismo congênito — associado à hiper-reflexia"
+        ],
+        ans: 0,
+        exp: "Segundo a Seção 2.1 e 2.7, o bócio multinodular predomina após a 4ª década e em áreas deficientes em iodo."
+      },
+      {
+        mode: "visual", cat: "Nódulo Tireoidiano (2.7)", atlasId: 13,
+        q: "Na imagem (Pág. 8), identifica-se um nódulo tireoidiano único visível e palpável que sobe à deglutição. Durante o exame físico, o que deve ser obrigatoriamente pesquisado ao lado?",
+        opts: [
+          "Linfonodos satélites nas cadeias cervicais (suspeita de metástase de carcinoma)",
+          "Sopro sistólico em foco mitral",
+          "Reflexo fotomotor consensual",
+          "Edema depressível em região maleolar",
+          "Sinal de Von Graefe unilateral"
+        ],
+        ans: 0,
+        exp: "Diante de nódulo tireoidiano único (especialmente duro, fixo, irregular ou de crescimento rápido), deve-se palpar as cadeias cervicais em busca de linfonodos satélites."
+      },
+      {
+        mode: "visual", cat: "Exame Neurológico (2.7)", atlasId: 14,
+        q: "Na imagem (Pág. 9), solicita-se que o paciente estenda os braços à frente com os dedos afastados (podendo apoiar uma folha de papel sobre as mãos). Qual sinal está sendo pesquisado?",
+        opts: [
+          "Tremor fino das mãos — característico do hipertireoidismo",
+          "Pseudomiotonia — característica do hipotireoidismo",
+          "Asterixis (flapping) — encefalopatia hepática",
+          "Acropatia tireoidiana — baqueteamento digital",
+          "Síndrome do túnel do carpo — compressão do mediano"
+        ],
+        ans: 0,
+        exp: "Braços estendidos e dedos afastados (com folha de papel sobre o dorso das mãos para amplificar a oscilação) evidenciam o tremor fino de extremidades típico do hipertireoidismo."
+      },
+      {
+        mode: "visual", cat: "Fácies & Sobrancelhas (2.7)", atlasId: 15,
+        q: "Observe na fotografia (Pág. 9) a perda/rarefação acentuada do terço externo (lateral) da sobrancelha. Qual é o nome epônimo desse sinal e sua associação?",
+        opts: [
+          "Sinal de Hertoghe (madarose lateral) — hipotireoidismo",
+          "Sinal de Pemberton — bócio mergulhante",
+          "Sinal de Von Graefe — hipertireoidismo",
+          "Unhas de Plummer — tireotoxicose",
+          "Tríade de Merseburg — Doença de Graves"
+        ],
+        ans: 0,
+        exp: "A rarefação do terço externo das sobrancelhas (sinal de Hertoghe) é um sinal semiológico clássico do hipotireoidismo."
+      },
+      {
+        mode: "visual", cat: "Exame Facial (2.7)", atlasId: 16,
+        q: "Na foto (Pág. 9), observam-se bolsas palpebrais e edema periorbital que NÃO deixa cacifo à digitopressão (não depressível). Esse achado aponta para:",
+        opts: [
+          "Hipotireoidismo (mixedema periorbital por acúmulo de glicosaminoglicanos)",
+          "Oftalmopatia de Graves classe 1 isolada",
+          "Crise tireotóxica hipercinética",
+          "Hipertireoidismo factício por levotiroxina",
+          "Tireoidite subaguda viral"
+        ],
+        ans: 0,
+        exp: "No hipotireoidismo ocorre edema não depressível (duro, sem cacifo) periorbital e de membros inferiores devido à infiltração tecidual por mucopolissacarídeos."
+      },
+      {
+        mode: "visual", cat: "Pele & Metabolismo (2.7)", atlasId: 17,
+        q: "A imagem (Pág. 9) ilustra pele seca, áspera, fria e descamativa ('pele de papiro'), frequentemente com tonalidade amarelada (carotenemia). Qual é o estado tireoidiano?",
+        opts: [
+          "Hipotireoidismo (redução da conversão hepática de caroteno em vitamina A e hipoidrose)",
+          "Hipertireoidismo (pele fina, sedosa, quente e úmida)",
+          "Doença de Graves com síndrome hipercinética",
+          "Crise tireotóxica com icterícia colestática",
+          "Tireoidite aguda supurativa"
+        ],
+        ans: 0,
+        exp: "No hipotireoidismo, a pele torna-se seca, fria, áspera ('pele de papiro') e amarelada pelo acúmulo de caroteno (diferente da icterícia, poupa as escleras)."
+      },
+      {
+        mode: "visual", cat: "Extremidades (2.7)", atlasId: 18,
+        q: "Observe na fotografia (Pág. 9) o baqueteamento digital associado a edema de partes moles dos dedos das mãos. Qual é essa rara manifestação (~1%) da Doença de Graves?",
+        opts: [
+          "Acropatia tireoidiana",
+          "Unhas de Plummer",
+          "Mixedema pré-tibial",
+          "Síndrome do túnel do carpo",
+          "Pseudomiotonia distal"
+        ],
+        ans: 0,
+        exp: "A acropatia tireoidiana (baqueteamento digital + edema de partes moles/periostite) é uma manifestação extratireoidiana rara (~1%) da Doença de Graves."
+      },
+      {
+        mode: "visual", cat: "Endocrinologia & Mama (2.7)", atlasId: 19,
+        q: "Na imagem (Pág. 10), observa-se aumento do tecido mamário em paciente do sexo masculino. Qual mecanismo hormonal explica esse achado no hipertireoidismo?",
+        opts: [
+          "Elevação da relação estrogênio/andrógeno livre (aumento da SHBG e aromatização periférica)",
+          "Hiperprolactinemia isolada por elevação acentuada do TRH",
+          "Infiltração mixedematosa do parênquima mamário",
+          "Deficiência grave de iodo na infância",
+          "Uso terapêutico de propranolol"
+        ],
+        ans: 0,
+        exp: "No hipertireoidismo ocorre ginecomastia no homem devido ao aumento da relação estrogênio/andrógeno (elevação da SHBG que liga mais testosterona que estradiol)."
+      },
+      {
+        mode: "visual", cat: "Pediatria & Tireoide (2.7)", atlasId: 20,
+        q: "A fotografia (Pág. 10) mostra criança com baixa estatura desproporcionada, fácies infiltrada, macroglossia e atraso neuropsicomotor grave. Qual é o diagnóstico?",
+        opts: [
+          "Cretinismo — consequência do hipotireoidismo congênito não tratado",
+          "Doença de Graves neonatal transitória",
+          "Bócio multinodular tóxico juvenil",
+          "Tireoidite subaguda granulomatosa",
+          "Acropatia tireoidiana congênita"
+        ],
+        ans: 0,
+        exp: "O cretinismo (baixa estatura, fácies mixedematosa, macroglossia e retardo mental) resulta do hipotireoidismo congênito não diagnosticado/tratado precocemente."
+      },
+      {
+        mode: "visual", cat: "Fâneros & Cabelos (2.7)", atlasId: 22,
+        q: "Na imagem (Pág. 10), os cabelos apresentam-se secos, opacos, quebradiços e rarefeitos. Essa alteração capilar é típica de qual disfunção?",
+        opts: [
+          "Hipotireoidismo (enquanto no hipertireoidismo os cabelos são finos e lisos)",
+          "Hipertireoidismo grave (cabelos oleosos e espessos)",
+          "Tireoidite subaguda em fase hipertireóidea",
+          "Intoxicação aguda por iodetos",
+          "Excesso de levotiroxina exógena"
+        ],
+        ans: 0,
+        exp: "No hipotireoidismo, os cabelos são secos, sem brilho, quebradiços e caem facilmente; no hipertireoidismo, os fios ficam muito finos e lisos."
+      },
+      {
+        mode: "visual", cat: "Sistema Muscular (2.7)", atlasId: 23,
+        q: "Observe na foto (Pág. 10) a perda acentuada de massa muscular nas cinturas escapular e pélvica, gerando dificuldade para levantar da cadeira sem apoio das mãos ou pentear os cabelos. Qual é o quadro?",
+        opts: [
+          "Atrofia muscular proximal (miopatia tireotóxica) — hipertireoidismo",
+          "Pseudo-hipertrofia muscular — hipotireoidismo",
+          "Polimiosite autoimune isolada",
+          "Rabdomiólise por coma mixedematoso",
+          "Paralisia periódica hipocalêmica exclusivamente distal"
+        ],
+        ans: 0,
+        exp: "A miopatia tireotóxica do hipertireoidismo causa fraqueza e atrofia muscular proximal (cintura escapular e pélvica), dificultando subir escadas, levantar ou pentear-se."
+      },
+      {
+        mode: "visual", cat: "Autoimunidade & Pele (2.7)", atlasId: 25,
+        q: "Na imagem (Pág. 11), identificam-se máculas acrômicas bem delimitadas. Por que esse achado aparece no capítulo de Semiologia da Tireoide?",
+        opts: [
+          "Vitiligo — faz parte das doenças autoimunes associadas a Graves e Hashimoto (junto com Addison, anemia perniciosa e miastenia grave)",
+          "Carotenemia — acúmulo de pigmento amarelo no hipotireoidismo",
+          "Mixedema pré-tibial em fase cicatricial",
+          "Agranulocitose cutânea induzida por metimazol",
+          "Icterícia grave da crise tireotóxica"
+        ],
+        ans: 0,
+        exp: "Doenças tireoidianas autoimunes (Graves e Hashimoto) associam-se frequentemente a outras autoimunidades: vitiligo, doença de Addison, anemia perniciosa e miastenia grave."
+      }
+    ];
+
+    // MODO 2: 12 Questões de Casos Clínicos, Tríade & Sinais de Alarme (2.1 a 2.5.1)
+    const CLINICAL_QUESTIONS = [
+      {
+        mode: "casos", cat: "Tríade Clássica (2.4)",
+        q: "Mulher de 32 anos apresenta nervosismo, perda de peso com polifagia, pele quente e úmida, além da Tríade de Merseburg. Quais são os três componentes exatos dessa tríade?",
+        opts: [
+          "Bócio + taquicardia + exoftalmia (Doença de Graves)",
+          "Miose + ptose parcial + enoftalmia (Síndrome de Horner)",
+          "Bradicardia + hipotermia + hipoventilação (Coma mixedematoso)",
+          "Dor cervical + febre baixa + otalgia reflexa (Tireoidite subaguda)",
+          "Disfonia + disfagia + dispneia (Câncer anaplásico)"
+        ],
+        ans: 0,
+        exp: "A Tríade de Graves (Merseburg) é composta por: bócio difuso + taquicardia + exoftalmia."
+      },
+      {
+        mode: "casos", cat: "Emergências Tireoidianas (2.5.1)",
+        q: "Paciente com Doença de Graves abandona o tratamento e, após infecção respiratória, dá entrada na UTI com febre alta (40 °C), taquicardia extrema (170 bpm) com fibrilação atrial, agitação/delirium, diarreia e icterícia. Qual é o diagnóstico?",
+        opts: [
+          "Crise tireotóxica (tempestade tireoidiana)",
+          "Coma mixedematoso descompensado",
+          "Hipotireoidismo subclínico pós-infeccioso",
+          "Tireoidite subaguda de De Quervain",
+          "Agranulocitose por propiltiouracil"
+        ],
+        ans: 0,
+        exp: "Febre alta + taquicardia extrema/FA + IC + agitação/delirium/coma + vômitos/diarreia/icterícia desencadeados por infecção, cirurgia, parto, iodo ou suspensão do tratamento definem a crise tireotóxica."
+      },
+      {
+        mode: "casos", cat: "Emergências & Farmacologia (2.5.1)",
+        q: "Paciente iniciou metimazol (antitireoidiano) há 3 semanas para hipertireoidismo e retorna hoje com febre alta, odinofagia intensa (dor de garganta) e úlceras orais. Qual é a suspeita crítica e a conduta imediata?",
+        opts: [
+          "Agranulocitose induzida por antitireoidiano — suspender imediatamente a droga e colher hemograma",
+          "Crise tireotóxica — dobrar a dose do antitireoidiano",
+          "Tireoidite subaguda — iniciar iodeto de potássio",
+          "Faringite viral banal — manter o antitireoidiano e observar por 7 dias",
+          "Coma mixedematoso — iniciar levotiroxina endovenosa"
+        ],
+        ans: 0,
+        exp: "Febre + dor de garganta ou úlceras orais em usuário de antitireoidiano é sinal de alarme máximo para agranulocitose, exigindo suspensão imediata do fármaco e hemograma urgente."
+      },
+      {
+        mode: "casos", cat: "Emergências Tireoidianas (2.5.1)",
+        q: "Idosa de 78 anos com hipotireoidismo grave não tratado recebe sedativo/barbitúrico após fratura de fêmur e evolui com rebaixamento do nível de consciência até coma, hipotermia (34,5 °C), bradicardia, hipotensão, hipoventilação, hiponatremia e hipoglicemia. Qual é o quadro?",
+        opts: [
+          "Coma mixedematoso",
+          "Tempestade tireotóxica apática",
+          "Miocardiopatia tireotóxica hipercinética",
+          "Hipertireoidismo factício por amiodarona",
+          "Cretinismo tardio"
+        ],
+        ans: 0,
+        exp: "O coma mixedematoso é o estágio final do hipotireoidismo grave (coma + hipotermia + bradicardia + hipotensão + hipoventilação + hiponatremia/hipoglicemia), desencadeado por estresse ou sedativos/barbitúricos."
+      },
+      {
+        mode: "casos", cat: "Sinais de Alarme: Câncer (2.5.1)",
+        q: "Paciente de 68 anos com bócio antigo apresenta aumento explosivo do volume cervical em apenas 3 semanas, acompanhado de rouquidão súbita e dificuldade para engolir. Qual é a principal suspeita?",
+        opts: [
+          "Carcinoma anaplásico da tireoide (invasão de nervo laríngeo recorrente e esôfago)",
+          "Bócio endêmico simples por carência recente de iodo",
+          "Doença de Graves benigna",
+          "Tireoidite de Hashimoto subclínica",
+          "Cisto tireoglosso inflamado"
+        ],
+        ans: 0,
+        exp: "Crescimento rápido em semanas + disfonia/disfagia/dispneia súbitas é sinal de alarme clássico para carcinoma anaplásico da tireoide com invasão local."
+      },
+      {
+        mode: "casos", cat: "Anamnese & Medicamentos (2.1)",
+        q: "Quais medicamentos listados na Seção 2.1 interferem diretamente na função ou na semiologia da tireoide?",
+        opts: [
+          "Iodados (xaropes, contrastes, colutórios), amiodarona, propranolol e lítio",
+          "Metformina, enalapril, sinvastatina e omeprazol",
+          "Digoxina, cloroquina, acetazolamida e pilocarpina",
+          "Salbutamol, budesonida, montelucaste e teofilina",
+          "Varfarina, clopidogrel, heparina e ácido acetilsalicílico"
+        ],
+        ans: 0,
+        exp: "A Seção 2.1 destaca especificamente: iodados (xaropes, contraste, colutórios), amiodarona, propranolol e lítio."
+      },
+      {
+        mode: "casos", cat: "Anamnese & Ocupação (2.1)",
+        q: "Profissional da área da saúde manipula constantemente antissépticos iodados ou ingere hormônio tireoidiano ocultamente, apresentando hipertireoidismo com captação baixa de 131I. Como é classificado esse quadro?",
+        opts: [
+          "Hipertireoidismo factício ou induzido por contaminação por iodetos (Jod-Basedow)",
+          "Doença de Graves clássica com autoanticorpos TRAb elevados",
+          "Hipotireoidismo subclínico pós-climatério",
+          "Bócio endêmico por deficiência severa de iodo",
+          "Cretinismo adquirido"
+        ],
+        ans: 0,
+        exp: "A manipulação/ingestão de iodo, antissépticos iodados ou hormônio tireoidiano causa hipertireoidismo factício ou com captação baixa de radioiodo (131I)."
+      },
+      {
+        mode: "casos", cat: "Sintomas & Diferencial (2.3)",
+        q: "Mulher de 40 anos refere dor intensa na região anterior do pescoço após infecção viral recente; a dor piora ao engolir e à palpação da tireoide, irradiando-se para a mandíbula e o ouvido, com febre baixa. Qual é o diagnóstico e seu principal diferencial?",
+        opts: [
+          "Tireoidite subaguda — diferenciar de amigdalite e faringite",
+          "Carcinoma papilífero — diferenciar de cisto branquial",
+          "Doença de Graves — diferenciar de crise de pânico",
+          "Coma mixedematoso — diferenciar de AVC isquêmico",
+          "Bócio mergulhante — diferenciar de tumor de Pancoast"
+        ],
+        ans: 0,
+        exp: "Dor tireoidiana que piora ao deglutir/palpar e irradia para mandíbula e ouvido com febre baixa caracteriza a tireoidite subaguda, devendo ser diferenciada de amigdalite e faringite."
+      },
+      {
+        mode: "casos", cat: "Semiologia Comparativa (2.5)",
+        q: "No consultório, um paciente jovem queixa-se de palpitações e sudorese. Como o exame físico das mãos ajuda a diferenciar rapidamente hipertireoidismo de transtorno de ansiedade?",
+        opts: [
+          "Hipertireoidismo: mãos quentes e úmidas; Ansiedade: mãos frias e úmidas",
+          "Hipertireoidismo: mãos frias e secas; Ansiedade: mãos quentes e secas",
+          "Hipertireoidismo: baqueteamento em 90% dos casos; Ansiedade: unhas de Plummer",
+          "Hipertireoidismo: pseudomiotonia; Ansiedade: hiper-reflexia aquileia",
+          "Não há diferença térmica entre as duas condições"
+        ],
+        ans: 0,
+        exp: "Conforme a Seção 2.5: no hipertireoidismo as mãos são quentes e úmidas (vasodilatação periférica), enquanto na ansiedade as mãos são frias e úmidas (vasoconstrição simpática)."
+      },
+      {
+        mode: "casos", cat: "Cardiovascular & Tireoide (2.2)",
+        q: "Qual é a principal arritmia cardíaca associada ao hipertireoidismo e quais são os achados típicos no ECG do hipotireoidismo?",
+        opts: [
+          "Hipertireoidismo: Fibrilação atrial (FA); Hipotireoidismo: bradicardia, baixa voltagem e alteração difusa da repolarização",
+          "Hipertireoidismo: bloqueio AV total; Hipotireoidismo: taquicardia supraventricular",
+          "Hipertireoidismo: onda delta de WPW; Hipotireoidismo: supradesnivelamento difuso de ST",
+          "Hipertireoidismo: bradicardia sinusal; Hipotireoidismo: fibrilação atrial de alta resposta",
+          "Ambas as condições cursam exclusivamente com extra-sístoles ventriculares"
+        ],
+        ans: 0,
+        exp: "No hipertireoidismo, a FA é a principal arritmia (mediação catecolaminérgica). No hipotireoidismo, o ECG mostra bradicardia, baixa voltagem (derrame pericárdico/mixedema) e alteração difusa da repolarização."
+      },
+      {
+        mode: "casos", cat: "Situações Especiais (2.3)",
+        q: "Como o hipertireoidismo pode se manifestar de forma atípica no paciente idoso ('hipertireoidismo apático')?",
+        opts: [
+          "Pode cursar com anorexia (em vez de apetite aumentado) e aparente 'melhora' de constipação prévia",
+          "Cursa invariavelmente com febre alta, polifagia voraz e mania",
+          "Apresenta sempre macroglossia e ascite volumosa exsudativa",
+          "Nunca provoca fibrilação atrial ou perda de peso",
+          "Manifesta-se apenas com hipotermia e hipoventilação"
+        ],
+        ans: 0,
+        exp: "No idoso, o hipertireoidismo pode causar anorexia em vez de aumento de apetite, e pacientes antes constipados podem relatar 'melhora' do hábito intestinal."
+      },
+      {
+        mode: "casos", cat: "Sinais de Alarme: Nódulo (2.5.1)",
+        q: "Qual perfil demográfico e histórico aumenta significativamente a probabilidade de malignidade diante de um nódulo tireoidiano?",
+        opts: [
+          "Nódulo em homem, em criança ou em paciente > 60 anos, com história de radiação cervical na infância ou história familiar",
+          "Mulher de 35 anos com múltiplos nódulos moles e história de gestação",
+          "Paciente residente em área montanhosa pobre em iodo com bócio macio há 20 anos",
+          "Mulher no pós-climatério com hipotireoidismo subclínico sem nódulos",
+          "Jovem com tremor fino, sopro tireoidiano difuso e exoftalmia bilateral"
+        ],
+        ans: 0,
+        exp: "São sinais de alerta para malignidade: nódulo em homem, criança ou > 60 anos, antecedente de radioterapia/radiação no pescoço na infância, história familiar, nódulo duro/fixo/irregular e linfonodo satélite."
+      }
+    ];
+
+    // MODO 3: 10 Questões de Manobras Especiais & Propedêutica (2.2 e 2.6)
+    const MANEUVER_QUESTIONS = [
+      {
+        mode: "manobras", cat: "Palpação da Tireoide (2.6)",
+        q: "Na palpação da tireoide pela abordagem posterior, como devem ser posicionadas as mãos do examinador para palpar o lobo direito?",
+        opts: [
+          "Examinador atrás, polegares na nuca, dedos indicador e médio na linha média; a mão esquerda palpa o lobo direito enquanto a mão direita afasta/relaxa o esternocleidomastóideo",
+          "Examinador à frente, ambos os polegares na nuca e indicadores sobre a fúrcula esternal",
+          "Examinador atrás, comprimindo simultaneamente ambas as carótidas com os polegares",
+          "Paciente em decúbito dorsal com hiperextensão cervical máxima e sem deglutir",
+          "Apenas palpação superficial com o dorso dos dedos para avaliar temperatura"
+        ],
+        ans: 0,
+        exp: "Na abordagem posterior: examinador atrás do paciente, polegares apoiados na nuca, indicador e médio na linha média; uma mão afasta/relaxa o ECM (fletindo ou girando levemente o pescoço) enquanto a outra palpa o lobo."
+      },
+      {
+        mode: "manobras", cat: "Deglutição 'em seco' (2.6)",
+        q: "Durante o exame cervical, solicita-se que o paciente engula 'em seco'. Se uma massa cervical anterior NÃO sobe durante a deglutição, qual é a interpretação semiológica?",
+        opts: [
+          "Provavelmente a massa NÃO pertence à glândula tireoide (ex.: linfonodo, lipoma, tumor não tireoidiano)",
+          "Confirma categoricamente bócio difuso tóxico de Graves",
+          "Indica hipertireoidismo factício por levotiroxina",
+          "É o critério diagnóstico de tireoidite subaguda",
+          "Significa que o lobo esquerdo é maior que o direito"
+        ],
+        ans: 0,
+        exp: "Como a tireoide é fixada à traqueia pela fáscia pré-traqueal, ela sobe ao deglutir. Uma massa que não sobe provavelmente não é tireoidiana (ou está fixada por invasão neoplásica avançada)."
+      },
+      {
+        mode: "manobras", cat: "Ausculta Cervical (2.6)",
+        q: "Ao posicionar o estetoscópio sobre os lobos tireoidianos (evitando confundir com sopro carotídeo), ausculta-se um sopro contínuo/sistólico associado a frêmito palpável. O que esse achado indica?",
+        opts: [
+          "Intensa hipervascularização glandular — característico da Doença de Graves",
+          "Hipotireoidismo grave por tireoidite de Hashimoto atrófica",
+          "Cisto tireoidiano simples sem vascularização",
+          "Coma mixedematoso iminente",
+          "Estenose de artéria subclávia esquerda"
+        ],
+        ans: 0,
+        exp: "A presença de frêmito à palpação e sopro à ausculta sobre os lobos tireoidianos reflete intensa hipervascularização parenquimatosa, típica da Doença de Graves."
+      },
+      {
+        mode: "manobras", cat: "Reflexo Aquileu (2.6)",
+        q: "Na pesquisa do reflexo aquileu (considerado o melhor reflexo tendinoso para avaliação tireoidiana), quais são as alterações esperadas no hipertireoidismo e no hipotireoidismo, respectivamente?",
+        opts: [
+          "Hipertireoidismo: hiper-reflexia; Hipotireoidismo: fase de relaxamento marcadamente lenta",
+          "Hipertireoidismo: arreflexia total; Hipotireoidismo: clônus inesgotável",
+          "Hipertireoidismo: relaxamento lento; Hipotireoidismo: hiper-reflexia",
+          "Ambos apresentam sinal de Babinski bilateral",
+          "O reflexo aquileu não sofre influência dos hormônios tireoidianos"
+        ],
+        ans: 0,
+        exp: "O reflexo aquileu é o mais sensível na semiologia tireoidiana: mostra hiper-reflexia no hipertireoidismo e fase de relaxamento lenta ('em câmera lenta') no hipotireoidismo."
+      },
+      {
+        mode: "manobras", cat: "Sinal de Von Graefe (2.6)",
+        q: "Como é executado o teste do Sinal de Von Graefe (lid-lag) e qual achado define sua positividade?",
+        opts: [
+          "O paciente olha para cima e depois acompanha o dedo devagar para baixo; a pálpebra superior fica 'para trás', expondo faixa de esclera acima da íris (oftalmopatia classe 1)",
+          "O paciente fecha os olhos com força e o globo ocular gira para cima (fenômeno de Bell)",
+          "O paciente eleva os braços acima da cabeça e desenvolve pletora facial",
+          "O paciente estende os braços e apresenta tremor fino dos dedos",
+          "Ao iluminar uma pupila, a contralateral não contrai"
+        ],
+        ans: 0,
+        exp: "No Sinal de Von Graefe (lid-lag), ao olhar lentamente de cima para baixo, a pálpebra superior atrasa seu movimento em relação ao globo, deixando a esclera visível acima da íris (oftalmopatia classe 1)."
+      },
+      {
+        mode: "manobras", cat: "Motilidade na Oftalmopatia (2.6)",
+        q: "Ao testar a motilidade ocular extrínseca ('seguir o dedo' com a cabeça fixa) em um paciente com oftalmopatia de Graves (classe 4), qual movimento costuma ser o MAIS afetado?",
+        opts: [
+          "Convergência ocular",
+          "Abdução pura pelo reto lateral",
+          "Abaixamento em adução pelo oblíquo superior",
+          "Fechamento palpebral forçado",
+          "Acomodação pupilar à luz"
+        ],
+        ans: 0,
+        exp: "Conforme as Seções 2.2 e 2.6, na oftalmopatia tireotóxica classe 4 ocorre paralisia/restrição de movimentos oculares, sendo a convergência a mais afetada."
+      },
+      {
+        mode: "manobras", cat: "Exoftalmometria (2.6)",
+        q: "Na medida da protrusão ocular com exoftalmômetro na avaliação da oftalmopatia tireotóxica (Seções 2.2 e 2.6), qual é o limite superior da normalidade considerado no texto?",
+        opts: [
+          "Até 23 mm (> 23 mm = proptose)",
+          "Até 10 mm (> 10 mm = proptose)",
+          "Até 30 mm (> 30 mm = proptose)",
+          "Entre 35 e 40 mm",
+          "Apenas valores negativos indicam exoftalmia"
+        ],
+        ans: 0,
+        exp: "No PDF de Tireoide (Seções 2.2 e 2.6): exoftalmômetro normal até 23 mm; valores > 23 mm definem proptose (oftalmopatia classe 3)."
+      },
+      {
+        mode: "manobras", cat: "Sinal de Pemberton (2.6)",
+        q: "Durante quanto tempo o paciente deve manter os dois braços elevados acima da cabeça para pesquisar o Sinal de Pemberton?",
+        opts: [
+          "Aproximadamente 1 minuto (observando pletora facial, turgência jugular e dispneia)",
+          "Apenas 3 segundos em apneia inspiratória",
+          "15 minutos em decúbito lateral esquerdo",
+          "5 segundos enquanto deglute água",
+          "10 minutos com os olhos fechados"
+        ],
+        ans: 0,
+        exp: "Manobra de Pemberton: elevar ambos os braços acima da cabeça por ~1 minuto; o surgimento de pletora facial, turgência jugular e dispneia indica bócio mergulhante."
+      },
+      {
+        mode: "manobras", cat: "Anatomia & Palpação (2.2)",
+        q: "Sobre as características anatômicas normais da tireoide ao exame físico (Seção 2.2), assinale a alternativa CORRETA:",
+        opts: [
+          "O lobo direito costuma ser um pouco maior; nódulos são palpáveis em 4–5% da população (mas detectados em ~20% ao USG)",
+          "O lobo esquerdo é sempre duas vezes maior que o direito; nódulos são palpáveis em 60% dos adultos",
+          "A tireoide normal apresenta consistência pétrea, superfície nodular e frêmito contínuo",
+          "A glândula normal desce em direção ao tórax quando o paciente deglute",
+          "A glândula tireoide nunca é palpável mesmo em indivíduos muito magros"
+        ],
+        ans: 0,
+        exp: "Segundo a Seção 2.2: o lobo direito costuma ser discretamente maior; nódulos são palpáveis em 4–5% dos indivíduos, enquanto a ultrassonografia detecta nódulos em cerca de 20%."
+      },
+      {
+        mode: "manobras", cat: "Oftalmopatia Classe 3 (2.6)",
+        q: "Ao solicitar que o paciente com oftalmopatia de Graves feche suavemente as pálpebras ('fechar os olhos' - Seção 2.6), observa-se a porção inferior da esclera/íris exposta. Como se denomina esse achado?",
+        opts: [
+          "Lagoftalmia (oftalmopatia classe 3 — risco de exposição e úlcera de córnea)",
+          "Blefaroptose congênita",
+          "Sinal de Hertoghe",
+          "Sinal de Pemberton",
+          "Miose paralítica"
+        ],
+        ans: 0,
+        exp: "A incapacidade de ocluir completamente as pálpebras (deixando a parte inferior exposta) é a lagoftalmia (classe 3), que predispõe ao ressecamento e úlcera de córnea (classe 5)."
+      }
+    ];
+
+    const ALL_QUESTIONS_POOL = [
+      ...VISUAL_QUESTIONS.map((q, idx) => ({ ...q, uid: `vis_${idx}` })),
+      ...CLINICAL_QUESTIONS.map((q, idx) => ({ ...q, uid: `cli_${idx}` })),
+      ...MANEUVER_QUESTIONS.map((q, idx) => ({ ...q, uid: `man_${idx}` }))
+    ];
+
+    // Seção 2.1: Anamnese
+    const ANAMNESE_DATA = [
+      { titulo: "Sexo & Idade", desc: "Tireoidopatias são muito mais frequentes em mulheres. O bócio multinodular predomina após a 4ª década de vida." },
+      { titulo: "Procedência Geográfica", desc: "Residência ou origem em região pobre em iodo (áreas montanhosas/continentais afastadas do mar) sugere bócio endêmico." },
+      { titulo: "Profissão & Exposição ao Iodo", desc: "Manipulação de iodo, antissépticos iodados ou hormônio tireoidiano → hipertireoidismo factício ou hipertireoidismo com captação baixa de 131I (contaminação por iodetos)." },
+      { titulo: "Queixas de Chegada", desc: "'Problema da tireoide', cansaço, nervosismo, dispneia/palpitações, 'caroço no pescoço' ou 'papo'." },
+      { titulo: "Fatores Desencadeantes", desc: "Puberdade, gestação/puerpério, trauma emocional ou físico, infecções e predisposição a doenças autoimunes." },
+      { titulo: "Medicamentos Relevantes", desc: "Iodados (xaropes, contrastes radiológicos, colutórios), amiodarona (rica em iodo), propranolol (bloqueia sintomas adrenérgicos e conversão T4→T3) e lítio." }
+    ];
+
+    // Seção 2.2: Tabela Comparativa Hipertireoidismo vs. Hipotireoidismo
+    const EXAME_FISICO_DATA = [
+      { segmento: "Fácies", hiper: "Basedowiana: olhar brilhante, de 'medo/espanto', retração palpebral, emagrecida.", hipo: "Mixedematosa: apática, pele infiltrada, bolsas subpalpebrais, enoftalmia, macroglossia, rarefação do terço externo das sobrancelhas (Hertoghe)." },
+      { segmento: "Pele", hiper: "Fina, sedosa, quente e úmida.", hipo: "Seca, áspera, fria, descamativa, amarelada (caroteno), 'pele de papiro'." },
+      { segmento: "Unhas e cabelos", hiper: "Onicólise (unhas de Plummer); cabelos finos e lisos.", hipo: "Unhas frágeis com sulcos transversos; cabelos secos, quebradiços, queda." },
+      { segmento: "Cardiovascular", hiper: "Taquicardia (100–160 bpm), FA, bulhas hiperfonéticas, PA divergente, sopro sistólico pulmonar.", hipo: "Bradicardia, bulhas hipofonéticas, pulso fino, derrame pericárdico." },
+      { segmento: "Reflexos (melhor: aquileu)", hiper: "Hiper-reflexia.", hipo: "Fase de relaxamento lenta." },
+      { segmento: "Neuro / comportamento", hiper: "Irrequieto, fala rápida, tremor fino, mãos entre os joelhos.", hipo: "Lento, voz rouca e arrastada, desinteressado." },
+      { segmento: "Músculo", hiper: "Atrofia proximal (miopatia tireotóxica).", hipo: "Pseudo-hipertrofia, pseudomiotonia." },
+      { segmento: "Edema", hiper: "Mixedema pré-tibial (Doença de Graves, ~5%).", hipo: "Edema não depressível, periorbital e de MMII; ascite volumosa exsudativa." },
+      { segmento: "Outros achados", hiper: "Ausência da bola de Bichat (face caquética), ginecomastia, acropatia tireoidiana (~1%).", hipo: "Galactorreia, hidrocele, obesidade, síndrome do túnel do carpo." }
+    ];
+
+    // Seção 2.3: Sintomas Sistêmicos Comparativos
+    const SINTOMAS_DATA = [
+      { sistema: "Geral", hiper: "Intolerância ao calor, sudorese excessiva, perda de peso com apetite aumentado (idoso: pode ter anorexia).", hipo: "Intolerância ao frio, cansaço intenso, ganho de peso." },
+      { sistema: "Psíquico", hiper: "Nervosismo, irritabilidade, insônia, labilidade emocional (choro fácil).", hipo: "Desânimo, dificuldade de raciocínio (bradipsiquismo), apatia, letargia, coma." },
+      { sistema: "Cardiovascular", hiper: "Palpitações, dispneia de esforço, síndrome hipercinética.", hipo: "Poucas queixas cardiovasculares; às vezes angina." },
+      { sistema: "Digestivo", hiper: "Aumento do número de evacuações, diarreia.", hipo: "Constipação intestinal, fecaloma, íleo paralítico." },
+      { sistema: "Genital / Reprodutivo", hiper: "Oligomenorreia, abortos; libido e potência diminuídas.", hipo: "Galactorreia, amenorreia, infertilidade, libido diminuída." },
+      { sistema: "Muscular / Osteoarticular", hiper: "Fraqueza proximal (levantar, subir escada, pentear).", hipo: "Mialgia, artralgia, parestesias, síndrome do túnel do carpo." },
+      { sistema: "Olhos", hiper: "Lacrimejamento, fotofobia, sensação de 'areia nos olhos', dor retro-ocular, diplopia.", hipo: "Edema periorbital, madarose lateral (Hertoghe)." }
+    ];
+
+    // Seção 2.4: Tríade de Merseburg
+    const TRIADES_DATA = [
+      {
+        nome: "Tríade de Graves (Merseburg)",
+        componentes: ["Bócio difuso", "Taquicardia", "Exoftalmia"],
+        lesao: "Doença de Graves (hipertireoidismo autoimune mediado por anticorpos antirreceptor de TSH — TRAb)."
+      }
+    ];
+
+    // Seção 2.5.1 Parte A: Sinais de Alarme em Nódulo ou Bócio
+    const NODULE_ALARMS_DATA = [
+      { sinal: "Crescimento rápido, em semanas ou poucos meses", preocupa: "Carcinoma de tireoide, sobretudo o carcinoma anaplásico." },
+      { sinal: "Rouquidão, disfagia ou dispneia de início súbito em quem tem bócio", preocupa: "Invasão ou compressão do nervo laríngeo recorrente, esôfago ou traqueia." },
+      { sinal: "Nódulo duro, fixo e irregular à palpação", preocupa: "Alta suspeita de malignidade tireoidiana." },
+      { sinal: "Linfonodo cervical aumentado ao lado (linfonodo satélite)", preocupa: "Metástase linfonodal regional." },
+      { sinal: "Radiação no pescoço na infância ou história familiar de câncer de tireoide", preocupa: "Fator de risco epidemiológico/genético importante." },
+      { sinal: "Nódulo em homem, em criança ou acima de 60 anos", preocupa: "Faixas e sexo com maior probabilidade de malignidade." },
+      { sinal: "Dispneia ao fletir a cabeça, estridor ou Sinal de Pemberton positivo", preocupa: "Compressão traqueal/venosa no estreito torácico (bócio mergulhante)." },
+      { sinal: "Dor cervical + febre + crescimento da glândula", preocupa: "Tireoidite aguda/subaguda ou hemorragia intranodular aguda." }
+    ];
+
+    // Seção 2.5.1 Parte B: Emergências da Função Tireoidiana
+    const EMERGENCY_ALARMS_DATA = [
+      {
+        quadro: "Crise Tireotóxica (Tempestade)",
+        sinais: "Febre alta, taquicardia extrema ou FA, IC, agitação, delirium ou coma, vômito, diarreia, icterícia.",
+        desencadeantes: "Infecção, cirurgia, parto, exposição ao iodo, suspensão abrupta do tratamento."
+      },
+      {
+        quadro: "Coma Mixedematoso",
+        sinais: "Rebaixamento até coma, hipotermia, bradicardia, hipotensão, hipoventilação, hiponatremia, hipoglicemia.",
+        desencadeantes: "Estresse (infecção, trauma, cirurgia) e uso de sedativos/barbitúricos."
+      },
+      {
+        quadro: "Oftalmopatia Grave (Classes 5–6)",
+        sinais: "Baixa acuidade visual, perda da visão de cores, córnea exposta e ulcerada.",
+        desencadeantes: "Doença de Graves ativa e tabagismo."
+      },
+      {
+        quadro: "Uso de Antitireoidiano + Febre/Odinofagia",
+        sinais: "Febre + dor de garganta ou úlceras orais.",
+        desencadeantes: "Agranulocitose medicamentosa (suspender imediatamente e colher hemograma)."
+      },
+      {
+        quadro: "Miocardiopatia Tireotóxica",
+        sinais: "Dispneia, edema, fibrilação atrial (FA) de alta resposta ventricular.",
+        desencadeantes: "Hipertireoidismo intenso e prolongado."
+      }
+    ];
+
+    // Seção 2.5: Achados Patognomônicos
+    const PATOGNOMONICOS_DATA = [
+      "Unhas de Plummer (onicólise) = hipertireoidismo.",
+      "Mixedema pré-tibial ('pele de porco') = Doença de Graves.",
+      "Fácies basedowiana (olhar de espanto) = hipertireoidismo; sinal de Von Graefe (lid-lag) = oftalmopatia tireotóxica.",
+      "Mãos quentes e úmidas = hipertireoidismo (ansiedade = mãos frias e úmidas).",
+      "Rarefação do terço externo das sobrancelhas (sinal de Hertoghe) = hipotireoidismo.",
+      "Marca dos dentes na língua / macroglossia = hipotireoidismo.",
+      "Edema não depressível = mixedema (hipotireoidismo).",
+      "Fibrilação atrial = principal arritmia do hipertireoidismo.",
+      "Crescimento rápido + disfonia/disfagia súbitas = câncer anaplásico.",
+      "Dor tireoidiana que piora ao deglutir e irradia ao ouvido = tireoidite subaguda.",
+      "Ascite volumosa exsudativa = hipotireoidismo grave.",
+      "Reflexo aquileu com relaxamento lento = hipotireoidismo; hiper-reflexia = hipertireoidismo.",
+      "Exoftalmia + mixedema pré-tibial + acropatia = Doença de Graves."
+    ];
+
+    // Seção 2.6: Manobras Especiais (11 Técnicas)
+    const MANOBRAS_DATA = [
+      { nome: "Palpação — abordagem posterior", como: "Examinador atrás, polegares na nuca, indicador e médio na linha média; a mão esquerda palpa o lobo direito enquanto a outra afasta o ECM.", normal: "Glândula pouco ou não palpável, lisa, elástica, indolor.", alterado: "Aumento difuso ou localizado, nódulos, dor, consistência dura." },
+      { nome: "Palpação — abordagem anterior", como: "Examinador à frente; palpa com os polegares (ou com uma mão), demais dedos apoiados na região supraclavicular.", normal: "Glândula pouco ou não palpável, lisa, elástica, indolor.", alterado: "Aumento difuso ou localizado, nódulos, dor, consistência dura." },
+      { nome: "Deglutição 'em seco'", como: "Pedir para o paciente engolir durante a inspeção e a palpação; fletir ou girar levemente o pescoço relaxa o ECM.", normal: "A tireoide sobe ao deglutir.", alterado: "Massa que não sobe = provavelmente não é tireoide; polo inferior que não aparece = bócio mergulhante." },
+      { nome: "Ausculta da tireoide", como: "Posicionar o estetoscópio diretamente sobre os lobos tireoidianos.", normal: "Sem sopro.", alterado: "Sopro e/ou frêmito = intensa hipervascularização (Doença de Graves)." },
+      { nome: "Pesquisa de linfonodos satélites", como: "Palpar sistematicamente as cadeias linfonodais cervicais e supraclaviculares.", normal: "Ausentes (não palpáveis/reativos).", alterado: "Presentes (duros/aderidos) = suspeita de metástase de carcinoma." },
+      { nome: "Fechar os olhos (oftalmopatia)", como: "Pedir para o paciente fechar suavemente as pálpebras.", normal: "Fechamento palpebral completo.", alterado: "Íris/esclera inferior à mostra = lagoftalmia (oftalmopatia classe 3)." },
+      { nome: "Seguir o dedo (oftalmopatia)", como: "Cabeça fixa, acompanhar o dedo indicador nas posições do olhar e na aproximação.", normal: "Movimentos oculares completos.", alterado: "Paralisia/restrição de movimentos, principalmente da convergência (classe 4)." },
+      { nome: "Sinal de Von Graefe (lid-lag)", como: "Pedir para olhar para cima e depois acompanhar o dedo devagar para baixo.", normal: "Pálpebra superior acompanha harmoniosamente o globo.", alterado: "Pálpebra fica 'para trás' e a esclera aparece acima da íris = oftalmopatia (classe 1)." },
+      { nome: "Exoftalmometria", como: "Medida da protrusão ocular com exoftalmômetro.", normal: "Até 23 mm.", alterado: "> 23 mm = proptose (oftalmopatia classe 3)." },
+      { nome: "Reflexo aquileu", como: "Percussão do tendão de Aquiles com martelo de reflexos.", normal: "Contração e relaxamento normais.", alterado: "Hiper-reflexia = hipertireoidismo; fase de relaxamento lenta = hipotireoidismo." },
+      { nome: "Sinal de Pemberton", como: "Elevar os dois braços acima da cabeça encostando nas orelhas por ~1 minuto.", normal: "Sem alteração facial ou respiratória.", alterado: "Pletora facial, turgência jugular e dispneia = bócio mergulhante comprimindo a entrada torácica." }
+    ];
+
+    // =========================================================================
+    // 2. ESTADO GLOBAL DA APLICAÇÃO (COM PERSISTÊNCIA DE ERROS NO LOCALSTORAGE)
+    // =========================================================================
+    const savedWrongUids = JSON.parse(localStorage.getItem('thyroid_wrong_uids') || '[]');
+
+    let state = {
+      activeTab: 'atlas',
+      atlasFilter: 'todos',
+      blindStudy: false,
+      extractedImages: [], // { id, page, dataUrl, width, height }
+      atlasImageMap: {},   // atlasItem.id -> dataUrl
+      renderedPages: {},   // pageNum -> canvas dataUrl
+      pdfDoc: null,
+      quizSessionQuestions: [],
+      quizIndex: 0,
+      quizAnswers: {},
+      wrongQuestionUids: new Set(savedWrongUids),
+      quizMode: 'visual',
+      quizLimit: '20',
+      quizFeedback: 'immediate',
+      flashIndex: 0,
+      flashFlipped: false,
+      currentLightboxItemId: null
+    };
+
+    function persistWrongUids() {
+      localStorage.setItem('thyroid_wrong_uids', JSON.stringify([...state.wrongQuestionUids]));
+    }
+
+    // =========================================================================
+    // 3. UTILITÁRIOS DE UI E TEMA
+    // =========================================================================
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('hidden');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => toast.classList.add('hidden'), 3200);
+    }
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('thyroid_theme', isDark ? 'dark' : 'light');
+    }
+
+    if (localStorage.getItem('thyroid_theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+    document.getElementById('themeToggleMobile').addEventListener('click', toggleDarkMode);
+    document.getElementById('themeToggleDesktop').addEventListener('click', toggleDarkMode);
+
+    // =========================================================================
+    // 4. NAVEGAÇÃO POR ABAS
+    // =========================================================================
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        state.activeTab = target;
+
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.remove('active', 'border-thyroid-600', 'text-thyroid-700', 'dark:text-thyroid-300', 'bg-thyroid-50/70', 'dark:bg-thyroid-950/50', 'font-semibold');
+          b.classList.add('border-transparent', 'text-slate-600', 'dark:text-slate-400', 'font-medium');
+        });
+        btn.classList.add('active', 'border-thyroid-600', 'text-thyroid-700', 'dark:text-thyroid-300', 'bg-thyroid-50/70', 'dark:bg-thyroid-950/50', 'font-semibold');
+        btn.classList.remove('border-transparent', 'text-slate-600', 'dark:text-slate-400', 'font-medium');
+
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+        document.getElementById(`tab-${target}`).classList.remove('hidden');
+      });
+    });
+
+    // =========================================================================
+    // 5. MOTOR EXTRATOR DE IMAGENS DO PDF (PDF.JS)
+    // =========================================================================
+    const pdfFileInput = document.getElementById('pdfFileInput');
+    const pdfDropZone = document.getElementById('pdfDropZone');
+
+    ['dragenter', 'dragover'].forEach(evt => {
+      pdfDropZone.addEventListener(evt, e => {
+        e.preventDefault();
+        pdfDropZone.classList.add('border-emerald-400', 'bg-white/15');
+      });
+    });
+    ['dragleave', 'drop'].forEach(evt => {
+      pdfDropZone.addEventListener(evt, e => {
+        e.preventDefault();
+        pdfDropZone.classList.remove('border-emerald-400', 'bg-white/15');
+      });
+    });
+    pdfDropZone.addEventListener('drop', e => {
+      const file = e.dataTransfer.files[0];
+      if (file && file.type === 'application/pdf') processPdfFile(file);
+      else showToast('Por favor, envie um arquivo PDF válido.');
+    });
+    pdfFileInput.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (file) processPdfFile(file);
+    });
+
+    async function processPdfFile(file) {
+      if (!window.pdfjsLib) {
+        showToast('Biblioteca PDF.js ainda carregando. Tente novamente em instantes.');
+        return;
+      }
+
+      const progressContainer = document.getElementById('pdfProgressContainer');
+      const progressBar = document.getElementById('pdfProgressBar');
+      const progressLabel = document.getElementById('pdfProgressLabel');
+      const progressPercent = document.getElementById('pdfProgressPercent');
+
+      progressContainer.classList.remove('hidden');
+      document.getElementById('pdfStatusText').textContent = `Carregando ${file.name}...`;
+
+      try {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        state.pdfDoc = pdf;
+        state.extractedImages = [];
+        state.atlasImageMap = {};
+        state.renderedPages = {};
+
+        const totalPages = pdf.numPages;
+        for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+          const pct = Math.round((pageNum / totalPages) * 100);
+          progressBar.style.width = `${pct}%`;
+          progressPercent.textContent = `${pct}%`;
+          progressLabel.textContent = `Extraindo objetos de imagem da página ${pageNum} de ${totalPages}...`;
+
+          const page = await pdf.getPage(pageNum);
+
+          // Renderiza no canvas apenas as páginas do Atlas (6 a 11) para economizar memória
+          if (pageNum >= 6 && pageNum <= 11) {
+            const viewport = page.getViewport({ scale: 2.0 });
+            const offCanvas = document.createElement('canvas');
+            offCanvas.width = viewport.width;
+            offCanvas.height = viewport.height;
+            const offCtx = offCanvas.getContext('2d');
+            await page.render({ canvasContext: offCtx, viewport }).promise;
+            state.renderedPages[pageNum] = offCanvas.toDataURL('image/jpeg', 0.9);
+          } else {
+            // Ainda precisa processar operatorList mesmo sem renderizar canvas completo
+            const opList = await page.getOperatorList();
+            // Apenas percorre se houver imagens
+          }
+
+          const opList = await page.getOperatorList();
+          const seenNames = new Set();
+
+          for (let i = 0; i < opList.fnArray.length; i++) {
+            const fn = opList.fnArray[i];
+            if (fn === pdfjsLib.OPS.paintImageXObject || fn === pdfjsLib.OPS.paintInlineImageXObject) {
+              const imgArg = opList.argsArray[i][0];
+              let imgObj = null;
+
+              if (typeof imgArg === 'string') {
+                if (seenNames.has(imgArg)) continue;
+                seenNames.add(imgArg);
+                imgObj = await new Promise(resolve => {
+                  if (page.objs.has(imgArg)) resolve(page.objs.get(imgArg));
+                  else page.objs.get(imgArg, obj => resolve(obj));
+                });
+              } else if (imgArg && imgArg.data) {
+                imgObj = imgArg;
+              }
+
+              if (imgObj && imgObj.width >= 45 && imgObj.height >= 45) {
+                const dataUrl = convertPdfImageObjToDataUrl(imgObj);
+                if (dataUrl) {
+                  state.extractedImages.push({
+                    id: state.extractedImages.length,
+                    page: pageNum,
+                    dataUrl,
+                    width: imgObj.width,
+                    height: imgObj.height
+                  });
+                }
+              }
+            }
+          }
+        }
+
+        pairExtractedImagesWithAtlas();
+
+        progressLabel.textContent = 'Extração concluída com sucesso!';
+        document.getElementById('pdfStatusText').textContent = `Arquivo carregado: ${file.name} (${totalPages} páginas)`;
+        document.getElementById('pdfLoadedToolbar').classList.remove('hidden');
+        document.getElementById('extractedStatsBadge').textContent = `${state.extractedImages.length} imagens extraídas do PDF`;
+
+        renderRawExtractedGallery();
+        initPageCropperSelector();
+        renderAtlasCards();
+        renderCurrentQuizQuestion();
+
+        showToast(`${state.extractedImages.length} imagens clínicas extraídas e pareadas com o Atlas!`);
+      } catch (err) {
+        console.error(err);
+        showToast('Erro ao processar o PDF. Verifique se o arquivo é válido.');
+        progressLabel.textContent = 'Falha ao ler PDF.';
+      }
+    }
+
+    function convertPdfImageObjToDataUrl(imgObj) {
+      try {
+        const w = imgObj.width;
+        const h = imgObj.height;
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+
+        if (imgObj.bitmap) {
+          ctx.drawImage(imgObj.bitmap, 0, 0);
+          return canvas.toDataURL('image/jpeg', 0.92);
+        }
+
+        if (imgObj.data) {
+          const imgData = ctx.createImageData(w, h);
+          const src = imgObj.data;
+          const dst = imgData.data;
+
+          if (src.length === w * h * 4) {
+            dst.set(src);
+          } else if (src.length === w * h * 3) {
+            let s = 0, d = 0;
+            while (s < src.length) {
+              dst[d++] = src[s++];
+              dst[d++] = src[s++];
+              dst[d++] = src[s++];
+              dst[d++] = 255;
+            }
+          } else if (src.length === w * h) {
+            let s = 0, d = 0;
+            while (s < src.length) {
+              const v = src[s++];
+              dst[d++] = v;
+              dst[d++] = v;
+              dst[d++] = v;
+              dst[d++] = 255;
+            }
+          } else {
+            return null;
+          }
+          ctx.putImageData(imgData, 0, 0);
+          return canvas.toDataURL('image/jpeg', 0.92);
+        }
+      } catch (e) {
+        return null;
+      }
+      return null;
+    }
+
+    function pairExtractedImagesWithAtlas() {
+      const imagesByPage = {};
+      state.extractedImages.forEach(img => {
+        if (!imagesByPage[img.page]) imagesByPage[img.page] = [];
+        imagesByPage[img.page].push(img);
+      });
+
+      const atlasByPage = {};
+      ATLAS_ITEMS.forEach(item => {
+        if (!atlasByPage[item.page]) atlasByPage[item.page] = [];
+        atlasByPage[item.page].push(item);
+      });
+
+      Object.keys(atlasByPage).forEach(pageStr => {
+        const p = Number(pageStr);
+        const pageItems = atlasByPage[p];
+        const pageImgs = imagesByPage[p] || [];
+        pageItems.forEach((item, idx) => {
+          if (pageImgs[idx]) {
+            state.atlasImageMap[item.id] = pageImgs[idx].dataUrl;
+          }
+        });
+      });
+
+      if (Object.keys(state.atlasImageMap).length < 8 && state.extractedImages.length >= 8) {
+        ATLAS_ITEMS.forEach((item, idx) => {
+          if (state.extractedImages[idx]) {
+            state.atlasImageMap[item.id] = state.extractedImages[idx].dataUrl;
+          }
+        });
+      }
+    }
+
+    document.getElementById('toggleRawGalleryBtn').addEventListener('click', () => {
+      document.getElementById('rawExtractedSection').classList.toggle('hidden');
+    });
+
+    function renderRawExtractedGallery() {
+      const grid = document.getElementById('rawExtractedGrid');
+      grid.innerHTML = state.extractedImages.map((img, idx) => `
+        <div class="group relative bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 aspect-square flex items-center justify-center">
+          <img src="${img.dataUrl}" class="w-full h-full object-cover" alt="Imagem ${idx + 1}" />
+          <span class="absolute top-1 left-1 px-1.5 py-0.5 text-[10px] font-bold bg-black/70 text-white rounded">Pág.${img.page} #${idx + 1}</span>
+        </div>
+      `).join('');
+    }
+
+    // =========================================================================
+    // 6. RECORTADOR MANUAL DE PÁGINAS DO ATLAS (PÁGINAS 6 A 11)
+    // =========================================================================
+    let cropperState = { isDrawing: false, startX: 0, startY: 0, currentCropDataUrl: null, baseImage: null };
+
+    document.getElementById('togglePageViewerBtn').addEventListener('click', () => {
+      const sec = document.getElementById('pageCropperSection');
+      sec.classList.toggle('hidden');
+      if (!sec.classList.contains('hidden')) {
+        initPageCropperSelector();
+      }
+    });
+
+    function initPageCropperSelector() {
+      const pageSel = document.getElementById('pdfPageSelector');
+      const targetSel = document.getElementById('cropTargetFinding');
+      const availablePages = Object.keys(state.renderedPages).map(Number).sort((a, b) => a - b);
+
+      if (availablePages.length === 0) {
+        pageSel.innerHTML = '<option value="">Carregue o Tireoide.pdf primeiro</option>';
+      } else {
+        pageSel.innerHTML = availablePages.map(p => `<option value="${p}">Página ${p} do PDF</option>`).join('');
+        loadPageIntoCropperCanvas(availablePages[0]);
+      }
+
+      targetSel.innerHTML = ATLAS_ITEMS.map(it => `<option value="${it.id}">#${it.id} (Pág.${it.page}) — ${it.achado}</option>`).join('');
+    }
+
+    document.getElementById('pdfPageSelector').addEventListener('change', e => {
+      if (e.target.value) loadPageIntoCropperCanvas(Number(e.target.value));
+    });
+
+    function loadPageIntoCropperCanvas(pageNum) {
+      const dataUrl = state.renderedPages[pageNum];
+      if (!dataUrl) return;
+      const canvas = document.getElementById('pdfPageCanvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        cropperState.baseImage = img;
+      };
+      img.src = dataUrl;
+    }
+
+    (function setupCropperCanvasEvents() {
+      const canvas = document.getElementById('pdfPageCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      function getCoords(e) {
+        const rect = canvas.getBoundingClientRect();
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+        return {
+          x: (e.clientX - rect.left) * scaleX,
+          y: (e.clientY - rect.top) * scaleY
+        };
+      }
+
+      canvas.addEventListener('mousedown', e => {
+        if (!cropperState.baseImage) return;
+        const pos = getCoords(e);
+        cropperState.isDrawing = true;
+        cropperState.startX = pos.x;
+        cropperState.startY = pos.y;
+      });
+
+      canvas.addEventListener('mousemove', e => {
+        if (!cropperState.isDrawing || !cropperState.baseImage) return;
+        const pos = getCoords(e);
+        ctx.drawImage(cropperState.baseImage, 0, 0);
+        ctx.strokeStyle = '#7c3aed';
+        ctx.lineWidth = 4;
+        ctx.setLineDash([8, 4]);
+        ctx.strokeRect(cropperState.startX, cropperState.startY, pos.x - cropperState.startX, pos.y - cropperState.startY);
+        ctx.setLineDash([]);
+      });
+
+      canvas.addEventListener('mouseup', e => {
+        if (!cropperState.isDrawing || !cropperState.baseImage) return;
+        cropperState.isDrawing = false;
+        const pos = getCoords(e);
+        const x = Math.min(cropperState.startX, pos.x);
+        const y = Math.min(cropperState.startY, pos.y);
+        const w = Math.abs(pos.x - cropperState.startX);
+        const h = Math.abs(pos.y - cropperState.startY);
+
+        ctx.drawImage(cropperState.baseImage, 0, 0);
+        if (w > 20 && h > 20) {
+          const tempCanvas = document.createElement('canvas');
+          tempCanvas.width = w;
+          tempCanvas.height = h;
+          tempCanvas.getContext('2d').drawImage(cropperState.baseImage, x, y, w, h, 0, 0, w, h);
+          cropperState.currentCropDataUrl = tempCanvas.toDataURL('image/jpeg', 0.92);
+
+          const prevImg = document.getElementById('cropPreviewImg');
+          prevImg.src = cropperState.currentCropDataUrl;
+          prevImg.classList.remove('hidden');
+          document.getElementById('cropPlaceholderText').classList.add('hidden');
+          document.getElementById('applyCropBtn').disabled = false;
+        }
+      });
+
+      document.getElementById('applyCropBtn').addEventListener('click', () => {
+        const targetId = Number(document.getElementById('cropTargetFinding').value);
+        if (targetId && cropperState.currentCropDataUrl) {
+          state.atlasImageMap[targetId] = cropperState.currentCropDataUrl;
+          renderAtlasCards();
+          renderCurrentQuizQuestion();
+          showToast('Recorte salvo e vinculado à ficha clínica!');
+        }
+      });
+    })();
+
+    // =========================================================================
+    // 7. ATLAS DE IMAGENS CLÍNICAS (SEÇÃO 2.7 - 25 FICHAS) & MODAL LIGHTBOX
+    // =========================================================================
+    document.querySelectorAll('.atlas-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.atlasFilter = btn.dataset.atlasFilter;
+        document.querySelectorAll('.atlas-filter-btn').forEach(b => {
+          b.classList.remove('active', 'bg-thyroid-600', 'text-white', 'font-semibold');
+          b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300', 'font-medium');
+        });
+        btn.classList.add('active', 'bg-thyroid-600', 'text-white', 'font-semibold');
+        btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300', 'font-medium');
+        renderAtlasCards();
+      });
+    });
+
+    document.getElementById('blindStudyToggle').addEventListener('click', () => {
+      state.blindStudy = !state.blindStudy;
+      document.getElementById('blindStudyLabel').textContent = state.blindStudy
+        ? 'Modo Estudo ATIVO (Passe o mouse p/ revelar)'
+        : 'Modo Estudo: Ocultar Diagnóstico';
+      renderAtlasCards();
+    });
+
+    function renderAtlasCards() {
+      const grid = document.getElementById('atlasCardsGrid');
+      const filtered = state.atlasFilter === 'todos'
+        ? ATLAS_ITEMS
+        : ATLAS_ITEMS.filter(item => item.region === state.atlasFilter);
+
+      // Atualiza contador dinâmico no botão Todos
+      const allBtn = document.querySelector('[data-atlas-filter="todos"]');
+      if (allBtn) allBtn.textContent = `Todos (${ATLAS_ITEMS.length})`;
+
+      grid.innerHTML = filtered.map(item => {
+        const imgUrl = state.atlasImageMap[item.id];
+        const blurClass = state.blindStudy ? 'blur-sm select-none group-hover:blur-none transition-all duration-200' : '';
+
+        return `
+          <article onclick="openAtlasLightbox(${item.id})" class="group cursor-pointer bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-thyroid-500 shadow-sm hover:shadow-md transition overflow-hidden flex flex-col">
+            <div class="relative h-44 bg-slate-100 dark:bg-slate-950 flex items-center justify-center overflow-hidden border-b border-slate-100 dark:border-slate-800">
+              ${imgUrl
+                ? `<img src="${imgUrl}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="${item.achado}" />`
+                : `<div class="p-4 text-center space-y-1.5">
+                     <div class="w-10 h-10 mx-auto rounded-full bg-thyroid-100 dark:bg-thyroid-900/50 text-thyroid-600 dark:text-thyroid-300 flex items-center justify-center">
+                       <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z" /></svg>
+                     </div>
+                     <p class="text-[11px] font-medium text-slate-500 dark:text-slate-400">Anexe o <strong>Tireoide.pdf</strong> acima para ver a foto da Pág. ${item.page}</p>
+                   </div>`
+              }
+              <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-lg text-[10px] font-bold bg-slate-900/75 text-white backdrop-blur-sm">
+                #${item.id} • Pág. ${item.page}
+              </span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between space-y-2.5">
+              <div>
+                <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white ${blurClass}">${item.achado}</h3>
+                <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">${item.oQueE}</p>
+              </div>
+              <div class="pt-2 border-t border-slate-100 dark:border-slate-800">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400 block">Patologia / Associação</span>
+                <p class="text-xs font-semibold text-slate-800 dark:text-slate-200 mt-0.5 ${blurClass}">${item.patologia}</p>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function openAtlasLightbox(itemId) {
+      const item = ATLAS_ITEMS.find(i => i.id === itemId);
+      if (!item) return;
+      state.currentLightboxItemId = itemId;
+
+      document.getElementById('lightboxBadge').textContent = `Seção 2.7 • Ficha #${item.id} (Pág. ${item.page})`;
+      document.getElementById('lightboxTitle').textContent = item.achado;
+      document.getElementById('lightboxDesc').textContent = item.oQueE;
+      document.getElementById('lightboxPathology').textContent = item.patologia;
+
+      const imgEl = document.getElementById('lightboxImg');
+      const imgUrl = state.atlasImageMap[item.id];
+      if (imgUrl) {
+        imgEl.src = imgUrl;
+        imgEl.classList.remove('hidden');
+      } else {
+        imgEl.src = `https://placehold.co/600x360/1e1b4b/c4b5fd?text=Carregue+o+Tireoide.pdf+(Pág.+${item.page})`;
+        imgEl.classList.remove('hidden');
+      }
+
+      const reassignBox = document.getElementById('lightboxReassignBox');
+      if (state.extractedImages.length > 0) {
+        reassignBox.classList.remove('hidden');
+        const sel = document.getElementById('lightboxImageSelect');
+        sel.innerHTML = state.extractedImages.map((img, idx) =>
+          `<option value="${idx}">Imagem Extraída #${idx + 1} (Pág. ${img.page} • ${img.width}x${img.height})</option>`
+        ).join('');
+      } else {
+        reassignBox.classList.add('hidden');
+      }
+
+      document.getElementById('imageLightboxModal').classList.remove('hidden');
+    }
+
+    document.getElementById('closeLightboxBtn').addEventListener('click', () => {
+      document.getElementById('imageLightboxModal').classList.add('hidden');
+    });
+
+    document.getElementById('imageLightboxModal').addEventListener('click', e => {
+      if (e.target.id === 'imageLightboxModal') {
+        document.getElementById('imageLightboxModal').classList.add('hidden');
+      }
+    });
+
+    document.getElementById('saveReassignBtn').addEventListener('click', () => {
+      const idx = Number(document.getElementById('lightboxImageSelect').value);
+      const chosen = state.extractedImages[idx];
+      if (chosen && state.currentLightboxItemId) {
+        state.atlasImageMap[state.currentLightboxItemId] = chosen.dataUrl;
+        document.getElementById('lightboxImg').src = chosen.dataUrl;
+        renderAtlasCards();
+        renderCurrentQuizQuestion();
+        showToast('Imagem reassociada com sucesso!');
+      }
+    });
+
+    // =========================================================================
+    // 8. RENDERIZAÇÃO DAS SEÇÕES TEÓRICAS (2.1 A 2.6)
+    // =========================================================================
+    function renderAnamnese() {
+      const grid = document.getElementById('anamneseGrid');
+      grid.innerHTML = ANAMNESE_DATA.map(item => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+          <h3 class="text-sm font-bold text-thyroid-700 dark:text-thyroid-300 mb-2">${item.titulo}</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">${item.desc}</p>
+        </div>
+      `).join('');
+    }
+
+    function initPhysicalExam() {
+      const select = document.getElementById('segmentFilter');
+      const segments = [...new Set(EXAME_FISICO_DATA.map(r => r.segmento))];
+      select.innerHTML = '<option value="todos">Todos os Segmentos</option>' +
+        segments.map(sg => `<option value="${sg}">${sg}</option>`).join('');
+
+      select.addEventListener('change', () => renderPhysicalExamTable(select.value));
+      renderPhysicalExamTable('todos');
+    }
+
+    function renderPhysicalExamTable(filterVal) {
+      const tbody = document.getElementById('physicalExamTableBody');
+      const rows = filterVal === 'todos'
+        ? EXAME_FISICO_DATA
+        : EXAME_FISICO_DATA.filter(r => r.segmento === filterVal);
+
+      tbody.innerHTML = rows.map(r => `
+        <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition">
+          <td class="py-3 px-4 font-bold text-thyroid-700 dark:text-thyroid-300 whitespace-nowrap">${r.segmento}</td>
+          <td class="py-3 px-4 text-slate-800 dark:text-slate-200">${r.hiper}</td>
+          <td class="py-3 px-4 text-slate-600 dark:text-slate-300">${r.hipo}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderSymptomsTable() {
+      const tbody = document.getElementById('symptomsTableBody');
+      tbody.innerHTML = SINTOMAS_DATA.map(s => `
+        <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition">
+          <td class="py-3 px-4 font-bold text-slate-900 dark:text-white">${s.sistema}</td>
+          <td class="py-3 px-4 text-slate-800 dark:text-slate-200">${s.hiper}</td>
+          <td class="py-3 px-4 text-slate-600 dark:text-slate-300">${s.hipo}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderTriadesAndAlarms() {
+      // Tríade de Graves (2.4)
+      document.getElementById('triadesGrid').innerHTML = TRIADES_DATA.map(t => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+          <h3 class="text-lg font-extrabold text-thyroid-700 dark:text-thyroid-300">${t.nome}</h3>
+          <div class="flex flex-wrap gap-2">
+            ${t.componentes.map(c => `<span class="px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold bg-thyroid-50 dark:bg-thyroid-950/70 text-thyroid-800 dark:text-thyroid-200 border border-thyroid-200/60 dark:border-thyroid-800/60">${c}</span>`).join('')}
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300"><strong>Etiologia:</strong> ${t.lesao}</p>
+        </div>
+      `).join('');
+
+      // Sinais de Alarme: Nódulo / Bócio (2.5.1 A)
+      document.getElementById('noduleAlarmsGrid').innerHTML = NODULE_ALARMS_DATA.map((a, idx) => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border-l-4 border-l-rose-600 border border-slate-200 dark:border-slate-800 shadow-sm space-y-1.5">
+          <h3 class="text-sm sm:text-base font-bold text-rose-700 dark:text-rose-400">${idx + 1}. ${a.sinal}</h3>
+          <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300"><strong>Por que preocupa:</strong> ${a.preocupa}</p>
+        </div>
+      `).join('');
+
+      // Sinais de Alarme: Emergências (2.5.1 B)
+      document.getElementById('emergencyAlarmsGrid').innerHTML = EMERGENCY_ALARMS_DATA.map((e, idx) => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border-l-4 border-l-amber-500 border border-slate-200 dark:border-slate-800 shadow-sm space-y-2">
+          <h3 class="text-sm sm:text-base font-extrabold text-amber-800 dark:text-amber-300">${idx + 1}. ${e.quadro}</h3>
+          <p class="text-xs sm:text-sm text-slate-800 dark:text-slate-200"><strong>Sinais de alarme:</strong> ${e.sinais}</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400"><strong>Desencadeantes:</strong> ${e.desencadeantes}</p>
+        </div>
+      `).join('');
+
+      // Patognomônicos (2.5)
+      document.getElementById('pathognomonicList').innerHTML = PATOGNOMONICOS_DATA.map((p, idx) => `
+        <label class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 hover:bg-thyroid-50/60 dark:hover:bg-thyroid-950/30 border border-slate-200/70 dark:border-slate-700/70 cursor-pointer transition">
+          <input type="checkbox" class="mt-1 rounded text-thyroid-600 focus:ring-thyroid-500" />
+          <span class="text-xs sm:text-sm text-slate-800 dark:text-slate-200 leading-snug"><strong>#${idx + 1}:</strong> ${p}</span>
+        </label>
+      `).join('');
+    }
+
+    function renderManeuvers() {
+      document.getElementById('maneuversGrid').innerHTML = MANOBRAS_DATA.map((m, idx) => `
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between space-y-3">
+          <div class="space-y-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-thyroid-600 dark:text-thyroid-400">Manobra #${idx + 1}</span>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">${m.nome}</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"><strong>Execução:</strong> ${m.como}</p>
+          </div>
+          <div class="pt-2.5 border-t border-slate-100 dark:border-slate-800 space-y-1 text-xs">
+            <p class="text-emerald-700 dark:text-emerald-400"><strong>Normal:</strong> ${m.normal}</p>
+            <p class="text-amber-700 dark:text-amber-400"><strong>Alterado:</strong> ${m.alterado}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // =========================================================================
+    // 9. BUSCA GLOBAL EM TODAS AS SEÇÕES
+    // =========================================================================
+    const globalSearchInput = document.getElementById('globalSearch');
+    const clearSearchBtn = document.getElementById('clearSearch');
+
+    globalSearchInput.addEventListener('input', e => {
+      const q = e.target.value.trim().toLowerCase();
+      if (!q) {
+        clearSearchBtn.classList.add('hidden');
+        document.getElementById('globalSearchResults').classList.add('hidden');
+        return;
+      }
+      clearSearchBtn.classList.remove('hidden');
+      runGlobalSearch(q);
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      globalSearchInput.value = '';
+      clearSearchBtn.classList.add('hidden');
+      document.getElementById('globalSearchResults').classList.add('hidden');
+    });
+
+    document.getElementById('closeGlobalSearch').addEventListener('click', () => {
+      document.getElementById('globalSearchResults').classList.add('hidden');
+    });
+
+    function runGlobalSearch(query) {
+      const results = [];
+
+      ATLAS_ITEMS.forEach(it => {
+        if (`${it.achado} ${it.oQueE} ${it.patologia}`.toLowerCase().includes(query)) {
+          results.push({ tag: `Atlas 2.7 (Pág. ${it.page})`, title: it.achado, desc: `${it.oQueE} — ${it.patologia}`, action: () => openAtlasLightbox(it.id) });
+        }
+      });
+
+      EXAME_FISICO_DATA.forEach(ex => {
+        if (`${ex.segmento} ${ex.hiper} ${ex.hipo}`.toLowerCase().includes(query)) {
+          results.push({ tag: `Exame Físico • ${ex.segmento}`, title: ex.segmento, desc: `Hiper: ${ex.hiper} | Hipo: ${ex.hipo}` });
+        }
+      });
+
+      SINTOMAS_DATA.forEach(s => {
+        if (`${s.sistema} ${s.hiper} ${s.hipo}`.toLowerCase().includes(query)) {
+          results.push({ tag: `Sintomas (2.3) • ${s.sistema}`, title: s.sistema, desc: `Hiper: ${s.hiper} | Hipo: ${s.hipo}` });
+        }
+      });
+
+      TRIADES_DATA.forEach(t => {
+        if (`${t.nome} ${t.componentes.join(' ')} ${t.lesao}`.toLowerCase().includes(query)) {
+          results.push({ tag: 'Tríade (2.4)', title: t.nome, desc: `${t.componentes.join(' + ')} • ${t.lesao}` });
+        }
+      });
+
+      NODULE_ALARMS_DATA.forEach(a => {
+        if (`${a.sinal} ${a.preocupa}`.toLowerCase().includes(query)) {
+          results.push({ tag: '🚨 Alarme Nódulo (2.5.1)', title: a.sinal, desc: a.preocupa });
+        }
+      });
+
+      EMERGENCY_ALARMS_DATA.forEach(e => {
+        if (`${e.quadro} ${e.sinais} ${e.desencadeantes}`.toLowerCase().includes(query)) {
+          results.push({ tag: '⚡ Emergência (2.5.1)', title: e.quadro, desc: `${e.sinais} | ${e.desencadeantes}` });
+        }
+      });
+
+      MANOBRAS_DATA.forEach(m => {
+        if (`${m.nome} ${m.como} ${m.alterado}`.toLowerCase().includes(query)) {
+          results.push({ tag: 'Manobra (2.6)', title: m.nome, desc: `${m.como} | ${m.alterado}` });
+        }
+      });
+
+      const container = document.getElementById('globalSearchResults');
+      const list = document.getElementById('searchResultsList');
+      document.getElementById('searchCountBadge').textContent = results.length;
+      container.classList.remove('hidden');
+
+      if (results.length === 0) {
+        list.innerHTML = '<p class="text-sm text-slate-500 col-span-full py-4 text-center">Nenhum termo encontrado para esta busca.</p>';
+        return;
+      }
+
+      window._searchActions = results.map(r => r.action || null);
+      list.innerHTML = results.map((r, idx) => `
+        <div onclick="${r.action ? `window._searchActions[${idx}]()` : ''}" class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 ${r.action ? 'cursor-pointer hover:border-thyroid-500' : ''}">
+          <span class="text-[10px] font-bold uppercase text-thyroid-600 dark:text-thyroid-400 block">${r.tag}</span>
+          <h4 class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white mt-0.5">${r.title}</h4>
+          <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 line-clamp-3">${r.desc}</p>
+        </div>
+      `).join('');
+    }
+
+    // =========================================================================
+    // 10. SIMULADO CLÍNICO MÚLTIPLA ESCOLHA (A-E) & FLASHCARDS (ABA 6)
+    // =========================================================================
+    const FLASHCARDS_LIST = [
+      ...TRIADES_DATA.map(t => ({ tag: 'Tríade (2.4)', q: t.nome, a: `${t.componentes.join(' + ')}
+
+Etiologia: ${t.lesao}` })),
+      ...ATLAS_ITEMS.map(it => ({ tag: `Atlas (2.7 • Pág.${it.page})`, atlasId: it.id, q: `Achado: ${it.achado}
+(${it.oQueE})`, a: `Patologia associada: ${it.patologia}` }))
+    ];
+
+    document.getElementById('modeQuizBtn').addEventListener('click', () => {
+      document.getElementById('quizConfigBar').classList.remove('hidden');
+      document.getElementById('quizContainer').classList.remove('hidden');
+      document.getElementById('quizSummaryReport').classList.add('hidden');
+      document.getElementById('flashcardsContainer').classList.add('hidden');
+      document.getElementById('modeQuizBtn').classList.add('bg-thyroid-600', 'text-white');
+      document.getElementById('modeQuizBtn').classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+      document.getElementById('modeFlashBtn').classList.remove('bg-thyroid-600', 'text-white');
+      document.getElementById('modeFlashBtn').classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+    });
+
+    document.getElementById('modeFlashBtn').addEventListener('click', () => {
+      document.getElementById('flashcardsContainer').classList.remove('hidden');
+      document.getElementById('quizConfigBar').classList.add('hidden');
+      document.getElementById('quizContainer').classList.add('hidden');
+      document.getElementById('quizSummaryReport').classList.add('hidden');
+      document.getElementById('modeFlashBtn').classList.add('bg-thyroid-600', 'text-white');
+      document.getElementById('modeFlashBtn').classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+      document.getElementById('modeQuizBtn').classList.remove('bg-thyroid-600', 'text-white');
+      document.getElementById('modeQuizBtn').classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+      renderFlashcard();
+    });
+
+    document.getElementById('quickQuizPdfInput').addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (file) processPdfFile(file);
+    });
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function updateWrongQuestionsUI() {
+      const count = state.wrongQuestionUids.size;
+      const opt = document.getElementById('wrongOnlyOption');
+      opt.textContent = `🔁 Treinar Apenas o que Errei (${count})`;
+      opt.disabled = count === 0;
+
+      const retryBtn = document.getElementById('retryWrongBtn');
+      const badge = document.getElementById('wrongCountBadge');
+      badge.textContent = count;
+      if (count > 0) retryBtn.classList.remove('hidden');
+      else retryBtn.classList.add('hidden');
+    }
+
+    function updateQuizScoreboard() {
+      const answers = Object.values(state.quizAnswers);
+      const hits = answers.filter(a => a.isCorrect).length;
+      const misses = answers.filter(a => !a.isCorrect).length;
+      const total = answers.length;
+      const pct = total > 0 ? Math.round((hits / total) * 100) : 0;
+
+      document.getElementById('quizScoreHits').textContent = hits;
+      document.getElementById('quizScoreMisses').textContent = misses;
+      document.getElementById('quizAccuracyPct').textContent = `${pct}%`;
+    }
+
+    function startQuizSession(overrideMode = null) {
+      if (overrideMode) {
+        state.quizMode = overrideMode;
+        document.getElementById('quizModeSelect').value = overrideMode;
+      } else {
+        state.quizMode = document.getElementById('quizModeSelect').value;
+      }
+      state.quizLimit = document.getElementById('quizLimitSelect').value;
+      state.quizFeedback = document.getElementById('quizFeedbackSelect').value;
+
+      let pool = [];
+      if (state.quizMode === 'visual') {
+        pool = ALL_QUESTIONS_POOL.filter(q => q.mode === 'visual');
+      } else if (state.quizMode === 'casos') {
+        pool = ALL_QUESTIONS_POOL.filter(q => q.mode === 'casos');
+      } else if (state.quizMode === 'manobras') {
+        pool = ALL_QUESTIONS_POOL.filter(q => q.mode === 'manobras');
+      } else if (state.quizMode === 'erros') {
+        pool = ALL_QUESTIONS_POOL.filter(q => state.wrongQuestionUids.has(q.uid));
+        if (pool.length === 0) {
+          showToast('Você ainda não tem questões erradas registradas!');
+          pool = ALL_QUESTIONS_POOL.filter(q => q.mode === 'visual');
+          state.quizMode = 'visual';
+          document.getElementById('quizModeSelect').value = 'visual';
+        }
+      } else {
+        pool = [...ALL_QUESTIONS_POOL];
+      }
+
+      const shuffledPool = shuffleArray(pool);
+      const limitNum = state.quizLimit === 'all' ? shuffledPool.length : Math.min(Number(state.quizLimit), shuffledPool.length);
+
+      state.quizSessionQuestions = shuffledPool.slice(0, limitNum).map(q => {
+        const indexedOpts = q.opts.map((text, origIdx) => ({ text, isCorrect: origIdx === q.ans }));
+        const shuffledOpts = shuffleArray(indexedOpts);
+        const correctShuffledIdx = shuffledOpts.findIndex(o => o.isCorrect);
+        return {
+          ...q,
+          shuffledOpts: shuffledOpts.map(o => o.text),
+          correctShuffledIdx
+        };
+      });
+
+      state.quizIndex = 0;
+      state.quizAnswers = {};
+      updateQuizScoreboard();
+
+      document.getElementById('quizSummaryReport').classList.add('hidden');
+      document.getElementById('quizContainer').classList.remove('hidden');
+      renderCurrentQuizQuestion();
+    }
+
+    document.getElementById('startCustomQuizBtn').addEventListener('click', () => startQuizSession());
+    document.getElementById('retryWrongBtn').addEventListener('click', () => startQuizSession('erros'));
+    document.getElementById('reportRetryWrongBtn').addEventListener('click', () => startQuizSession('erros'));
+    document.getElementById('reportRestartBtn').addEventListener('click', () => startQuizSession());
+
+    function openQuizImageZoom() {
+      const qObj = state.quizSessionQuestions[state.quizIndex];
+      if (!qObj || !qObj.atlasId) return;
+      const imgUrl = state.atlasImageMap[qObj.atlasId];
+      if (!imgUrl) return;
+      document.getElementById('lightboxBadge').textContent = 'Zoom da Questão • Identificação Visual';
+      document.getElementById('lightboxTitle').textContent = 'Inspeção Clínica (Responda antes de conferir o diagnóstico)';
+      document.getElementById('lightboxDesc').textContent = 'Observe detalhadamente o pescoço, fácies, olhos, pele, unhas ou extremidades.';
+      document.getElementById('lightboxPathology').textContent = 'Oculto durante a resolução da questão.';
+      document.getElementById('lightboxImg').src = imgUrl;
+      document.getElementById('lightboxReassignBox').classList.add('hidden');
+      document.getElementById('imageLightboxModal').classList.remove('hidden');
+    }
+
+    function renderCurrentQuizQuestion() {
+      if (state.quizSessionQuestions.length === 0) return;
+
+      const total = state.quizSessionQuestions.length;
+      const qObj = state.quizSessionQuestions[state.quizIndex];
+      const existingAnswer = state.quizAnswers[qObj.uid];
+
+      const pctProgress = Math.round(((state.quizIndex + 1) / total) * 100);
+      document.getElementById('quizProgressText').textContent = `Progresso: Questão ${state.quizIndex + 1} de ${total}`;
+      document.getElementById('quizProgressBar').style.width = `${pctProgress}%`;
+      document.getElementById('quizQuestionCounter').textContent = `Questão ${state.quizIndex + 1} de ${total}`;
+      document.getElementById('quizCategoryBadge').textContent = qObj.cat;
+
+      const modeNames = { visual: '🖼️ Identificação Visual', casos: '🏥 Caso Clínico', manobras: '🩺 Manobra Especial' };
+      document.getElementById('quizModeTag').textContent = modeNames[qObj.mode] || 'Simulado';
+
+      const imgWrap = document.getElementById('quizImageWrapper');
+      const imgLoadedBox = document.getElementById('quizImageLoadedBox');
+      const imgMissingBox = document.getElementById('quizImageMissingBox');
+      const imgEl = document.getElementById('quizImageEl');
+
+      if (qObj.atlasId) {
+        imgWrap.classList.remove('hidden');
+        const extractedUrl = state.atlasImageMap[qObj.atlasId];
+        if (extractedUrl) {
+          imgEl.src = extractedUrl;
+          imgLoadedBox.classList.remove('hidden');
+          imgMissingBox.classList.add('hidden');
+        } else {
+          imgLoadedBox.classList.add('hidden');
+          imgMissingBox.classList.remove('hidden');
+        }
+      } else {
+        imgWrap.classList.add('hidden');
+      }
+
+      document.getElementById('quizQuestionText').textContent = qObj.q;
+
+      const optsList = document.getElementById('quizOptionsList');
+      const showImmediateResult = existingAnswer && state.quizFeedback === 'immediate';
+
+      optsList.innerHTML = qObj.shuffledOpts.map((optText, idx) => {
+        const letter = String.fromCharCode(65 + idx);
+        let btnStyle = 'border-slate-200 dark:border-slate-700 hover:border-thyroid-500 bg-slate-50 dark:bg-slate-800/60 text-slate-800 dark:text-slate-100';
+        let badgeStyle = 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200';
+
+        if (existingAnswer) {
+          if (showImmediateResult) {
+            if (idx === qObj.correctShuffledIdx) {
+              btnStyle = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-950 dark:text-emerald-200 font-semibold';
+              badgeStyle = 'bg-emerald-600 border-emerald-600 text-white';
+            } else if (idx === existingAnswer.chosenIdx && !existingAnswer.isCorrect) {
+              btnStyle = 'border-rose-500 bg-rose-50 dark:bg-rose-950/60 text-rose-950 dark:text-rose-200';
+              badgeStyle = 'bg-rose-600 border-rose-600 text-white';
+            } else {
+              btnStyle = 'border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40 opacity-60';
+            }
+          } else if (idx === existingAnswer.chosenIdx) {
+            btnStyle = 'border-thyroid-600 bg-thyroid-50 dark:bg-thyroid-950/60 text-thyroid-950 dark:text-thyroid-100 font-semibold';
+            badgeStyle = 'bg-thyroid-600 border-thyroid-600 text-white';
+          }
+        }
+
+        return `
+          <button data-opt-idx="${idx}" class="quiz-opt-btn w-full text-left p-3.5 sm:p-4 rounded-xl border-2 ${btnStyle} text-xs sm:text-sm transition flex items-start gap-3">
+            <span class="w-7 h-7 rounded-lg border ${badgeStyle} flex items-center justify-center text-xs font-extrabold shrink-0 mt-0.5">${letter}</span>
+            <span class="leading-snug pt-0.5">${optText}</span>
+          </button>
+        `;
+      }).join('');
+
+      document.querySelectorAll('.quiz-opt-btn').forEach(btn => {
+        btn.addEventListener('click', () => handleSelectQuizOption(Number(btn.dataset.optIdx)));
+      });
+
+      const expBox = document.getElementById('quizExplanationBox');
+      if (showImmediateResult) {
+        expBox.innerHTML = `
+          <div class="flex items-start gap-2.5">
+            <span class="text-base">${existingAnswer.isCorrect ? '✅' : '❌'}</span>
+            <div>
+              <strong class="block mb-1 ${existingAnswer.isCorrect ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'}">
+                ${existingAnswer.isCorrect ? 'Resposta Correta!' : `Incorreto — Alternativa correta: ${String.fromCharCode(65 + qObj.correctShuffledIdx)}`}
+              </strong>
+              <p>${qObj.exp}</p>
+            </div>
+          </div>
+        `;
+        expBox.classList.remove('hidden');
+      } else {
+        expBox.classList.add('hidden');
+      }
+
+      document.getElementById('prevQuestionBtn').disabled = state.quizIndex === 0;
+      const nextBtn = document.getElementById('nextQuestionBtn');
+      if (existingAnswer) {
+        nextBtn.classList.remove('hidden');
+        nextBtn.textContent = state.quizIndex === total - 1 ? 'Finalizar e Ver Relatório 🏆' : 'Próxima Questão →';
+      } else {
+        nextBtn.classList.add('hidden');
+      }
+    }
+
+    function handleSelectQuizOption(chosenIdx) {
+      const qObj = state.quizSessionQuestions[state.quizIndex];
+      if (!qObj) return;
+
+      if (state.quizFeedback === 'immediate' && state.quizAnswers[qObj.uid]) return;
+
+      const isCorrect = chosenIdx === qObj.correctShuffledIdx;
+      state.quizAnswers[qObj.uid] = {
+        chosenIdx,
+        isCorrect,
+        shuffledOpts: qObj.shuffledOpts,
+        correctShuffledIdx: qObj.correctShuffledIdx
+      };
+
+      if (isCorrect) {
+        state.wrongQuestionUids.delete(qObj.uid);
+      } else {
+        state.wrongQuestionUids.add(qObj.uid);
+      }
+
+      persistWrongUids();
+      updateWrongQuestionsUI();
+      updateQuizScoreboard();
+      renderCurrentQuizQuestion();
+    }
+
+    document.getElementById('prevQuestionBtn').addEventListener('click', () => {
+      if (state.quizIndex > 0) {
+        state.quizIndex--;
+        renderCurrentQuizQuestion();
+      }
+    });
+
+    document.getElementById('nextQuestionBtn').addEventListener('click', () => {
+      const total = state.quizSessionQuestions.length;
+      if (state.quizIndex < total - 1) {
+        state.quizIndex++;
+        renderCurrentQuizQuestion();
+      } else {
+        showQuizSummaryReport();
+      }
+    });
+
+    function showQuizSummaryReport() {
+      document.getElementById('quizContainer').classList.add('hidden');
+      const reportEl = document.getElementById('quizSummaryReport');
+      reportEl.classList.remove('hidden');
+
+      const total = state.quizSessionQuestions.length;
+      const answers = Object.values(state.quizAnswers);
+      const hits = answers.filter(a => a.isCorrect).length;
+      const pct = total > 0 ? Math.round((hits / total) * 100) : 0;
+
+      document.getElementById('reportFinalPct').textContent = `${pct}%`;
+      document.getElementById('reportHitsCount').textContent = `${hits}/${total}`;
+
+      const catStats = {};
+      state.quizSessionQuestions.forEach(q => {
+        const ans = state.quizAnswers[q.uid];
+        if (!catStats[q.cat]) catStats[q.cat] = { total: 0, hits: 0 };
+        catStats[q.cat].total++;
+        if (ans && ans.isCorrect) catStats[q.cat].hits++;
+      });
+
+      document.getElementById('reportCategoryBreakdown').innerHTML = Object.entries(catStats).map(([catName, st]) => {
+        const cPct = Math.round((st.hits / st.total) * 100);
+        const barColor = cPct >= 75 ? 'bg-emerald-500' : cPct >= 50 ? 'bg-amber-500' : 'bg-rose-500';
+        return `
+          <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 space-y-2">
+            <div class="flex items-center justify-between text-xs font-bold">
+              <span class="text-slate-800 dark:text-slate-200 truncate pr-2">${catName}</span>
+              <span class="text-thyroid-700 dark:text-thyroid-300 shrink-0">${st.hits}/${st.total} (${cPct}%)</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+              <div class="h-full ${barColor}" style="width: ${cPct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('reportReviewList').innerHTML = state.quizSessionQuestions.map((q, idx) => {
+        const ans = state.quizAnswers[q.uid];
+        const ok = ans && ans.isCorrect;
+        const chosenText = ans ? q.shuffledOpts[ans.chosenIdx] : 'Não respondida';
+        const correctText = q.shuffledOpts[q.correctShuffledIdx];
+        const thumbUrl = q.atlasId ? state.atlasImageMap[q.atlasId] : null;
+
+        return `
+          <div class="p-4 rounded-xl border ${ok ? 'border-emerald-200 dark:border-emerald-900/60 bg-emerald-50/40 dark:bg-emerald-950/20' : 'border-rose-200 dark:border-rose-900/60 bg-rose-50/40 dark:bg-rose-950/20'} space-y-2 text-xs sm:text-sm">
+            <div class="flex items-start gap-3">
+              ${thumbUrl ? `<img src="${thumbUrl}" class="w-16 h-16 rounded-lg object-cover border border-slate-300 dark:border-slate-700 shrink-0" alt="Miniatura" />` : ''}
+              <div class="flex-1 space-y-1">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-extrabold ${ok ? 'text-emerald-700 dark:text-emerald-400' : 'text-rose-700 dark:text-rose-400'}">
+                    ${ok ? '✅' : '❌'} Questão ${idx + 1} • ${q.cat}
+                  </span>
+                </div>
+                <p class="font-semibold text-slate-900 dark:text-white">${q.q}</p>
+                ${!ok ? `<p class="text-xs text-rose-700 dark:text-rose-300"><strong>Sua resposta:</strong> ${chosenText}</p>` : ''}
+                <p class="text-xs text-emerald-800 dark:text-emerald-300"><strong>Gabarito:</strong> ${correctText}</p>
+                <p class="text-xs text-slate-600 dark:text-slate-400 pt-1">${q.exp}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const retryWrongReportBtn = document.getElementById('reportRetryWrongBtn');
+      if (state.wrongQuestionUids.size > 0) {
+        retryWrongReportBtn.classList.remove('hidden');
+        retryWrongReportBtn.textContent = `🔁 Treinar Apenas as que Errei (${state.wrongQuestionUids.size})`;
+      } else {
+        retryWrongReportBtn.classList.add('hidden');
+      }
+    }
+
+    document.addEventListener('keydown', e => {
+      if (state.activeTab !== 'quiz') return;
+      if (document.activeElement && ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+      if (!document.getElementById('imageLightboxModal').classList.contains('hidden')) return;
+      if (document.getElementById('quizContainer').classList.contains('hidden')) return;
+
+      const key = e.key.toUpperCase();
+      const mapKeyToIdx = { 'A': 0, '1': 0, 'B': 1, '2': 1, 'C': 2, '3': 2, 'D': 3, '4': 3, 'E': 4, '5': 4 };
+      if (key in mapKeyToIdx) {
+        e.preventDefault();
+        handleSelectQuizOption(mapKeyToIdx[key]);
+      } else if (e.key === 'Enter') {
+        const nextBtn = document.getElementById('nextQuestionBtn');
+        if (!nextBtn.classList.contains('hidden')) {
+          e.preventDefault();
+          nextBtn.click();
+        }
+      }
+    });
+
+    // Flashcards
+    function renderFlashcard() {
+      const card = FLASHCARDS_LIST[state.flashIndex % FLASHCARDS_LIST.length];
+      state.flashFlipped = false;
+      document.getElementById('flashcardInner').classList.remove('card-flipped');
+      document.getElementById('flashCounter').textContent = `Card ${(state.flashIndex % FLASHCARDS_LIST.length) + 1} de ${FLASHCARDS_LIST.length}`;
+      document.getElementById('flashFrontTag').textContent = card.tag;
+      document.getElementById('flashFrontText').textContent = card.q;
+      document.getElementById('flashBackText').textContent = card.a;
+
+      const fImg = document.getElementById('flashFrontImg');
+      if (card.atlasId && state.atlasImageMap[card.atlasId]) {
+        fImg.src = state.atlasImageMap[card.atlasId];
+        fImg.classList.remove('hidden');
+      } else {
+        fImg.classList.add('hidden');
+      }
+    }
+
+    function flipCurrentFlashcard() {
+      state.flashFlipped = !state.flashFlipped;
+      document.getElementById('flashcardInner').classList.toggle('card-flipped', state.flashFlipped);
+    }
+
+    document.getElementById('flashcardBox').addEventListener('click', flipCurrentFlashcard);
+    document.getElementById('flipFlashBtn').addEventListener('click', flipCurrentFlashcard);
+    document.getElementById('nextFlashBtn').addEventListener('click', () => {
+      state.flashIndex++;
+      renderFlashcard();
+    });
+    document.getElementById('prevFlashBtn').addEventListener('click', () => {
+      state.flashIndex = (state.flashIndex - 1 + FLASHCARDS_LIST.length) % FLASHCARDS_LIST.length;
+      renderFlashcard();
+    });
+
+    // =========================================================================
+    // 11. INICIALIZAÇÃO
+    // =========================================================================
+    renderAtlasCards();
+    renderAnamnese();
+    initPhysicalExam();
+    renderSymptomsTable();
+    renderTriadesAndAlarms();
+    renderManeuvers();
+    updateWrongQuestionsUI();
+    startQuizSession('visual');
+    renderFlashcard();
+  </script>
+</body>
+</html>
